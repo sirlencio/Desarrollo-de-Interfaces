@@ -1,0 +1,17 @@
+C:\Users\manana\Desktop\Desarrollo-de-Interfaces\Ejercicio7\Ejercicio7\bin\Debug\net6.0-windows\Ejercicio7.exe
+C:\Users\manana\Desktop\Desarrollo-de-Interfaces\Ejercicio7\Ejercicio7\bin\Debug\net6.0-windows\Ejercicio7.deps.json
+C:\Users\manana\Desktop\Desarrollo-de-Interfaces\Ejercicio7\Ejercicio7\bin\Debug\net6.0-windows\Ejercicio7.runtimeconfig.json
+C:\Users\manana\Desktop\Desarrollo-de-Interfaces\Ejercicio7\Ejercicio7\bin\Debug\net6.0-windows\Ejercicio7.dll
+C:\Users\manana\Desktop\Desarrollo-de-Interfaces\Ejercicio7\Ejercicio7\bin\Debug\net6.0-windows\Ejercicio7.pdb
+C:\Users\manana\Desktop\Desarrollo-de-Interfaces\Ejercicio7\Ejercicio7\obj\Debug\net6.0-windows\Ejercicio7.csproj.AssemblyReference.cache
+C:\Users\manana\Desktop\Desarrollo-de-Interfaces\Ejercicio7\Ejercicio7\obj\Debug\net6.0-windows\Ejercicio7.Form1.resources
+C:\Users\manana\Desktop\Desarrollo-de-Interfaces\Ejercicio7\Ejercicio7\obj\Debug\net6.0-windows\Ejercicio7.csproj.GenerateResource.cache
+C:\Users\manana\Desktop\Desarrollo-de-Interfaces\Ejercicio7\Ejercicio7\obj\Debug\net6.0-windows\Ejercicio7.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\manana\Desktop\Desarrollo-de-Interfaces\Ejercicio7\Ejercicio7\obj\Debug\net6.0-windows\Ejercicio7.AssemblyInfoInputs.cache
+C:\Users\manana\Desktop\Desarrollo-de-Interfaces\Ejercicio7\Ejercicio7\obj\Debug\net6.0-windows\Ejercicio7.AssemblyInfo.cs
+C:\Users\manana\Desktop\Desarrollo-de-Interfaces\Ejercicio7\Ejercicio7\obj\Debug\net6.0-windows\Ejercicio7.csproj.CoreCompileInputs.cache
+C:\Users\manana\Desktop\Desarrollo-de-Interfaces\Ejercicio7\Ejercicio7\obj\Debug\net6.0-windows\Ejercicio7.dll
+C:\Users\manana\Desktop\Desarrollo-de-Interfaces\Ejercicio7\Ejercicio7\obj\Debug\net6.0-windows\refint\Ejercicio7.dll
+C:\Users\manana\Desktop\Desarrollo-de-Interfaces\Ejercicio7\Ejercicio7\obj\Debug\net6.0-windows\Ejercicio7.pdb
+C:\Users\manana\Desktop\Desarrollo-de-Interfaces\Ejercicio7\Ejercicio7\obj\Debug\net6.0-windows\Ejercicio7.genruntimeconfig.cache
+C:\Users\manana\Desktop\Desarrollo-de-Interfaces\Ejercicio7\Ejercicio7\obj\Debug\net6.0-windows\ref\Ejercicio7.dll

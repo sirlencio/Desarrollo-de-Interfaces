@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\manana\\source\\Desarrollo-de-Interfaces\\Ejercicio7\\Ejercicio7\\Ejercicio7.csproj",
+      "projectUniqueName": "C:\\Users\\manana\\Desktop\\Desarrollo-de-Interfaces\\Ejercicio7\\Ejercicio7\\Ejercicio7.csproj",
       "projectName": "Ejercicio7",
-      "projectPath": "C:\\Users\\manana\\source\\Desarrollo-de-Interfaces\\Ejercicio7\\Ejercicio7\\Ejercicio7.csproj",
+      "projectPath": "C:\\Users\\manana\\Desktop\\Desarrollo-de-Interfaces\\Ejercicio7\\Ejercicio7\\Ejercicio7.csproj",
       "packagesPath": "C:\\Users\\manana\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\manana\\source\\Desarrollo-de-Interfaces\\Ejercicio7\\Ejercicio7\\obj\\",
+      "outputPath": "C:\\Users\\manana\\Desktop\\Desarrollo-de-Interfaces\\Ejercicio7\\Ejercicio7\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\manana\\AppData\\Roaming\\NuGet\\NuGet.Config",
