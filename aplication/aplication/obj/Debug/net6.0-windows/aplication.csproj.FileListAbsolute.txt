@@ -1,0 +1,17 @@
+C:\Users\manana\source\repos\aplication\aplication\bin\Debug\net6.0-windows\aplication.exe
+C:\Users\manana\source\repos\aplication\aplication\bin\Debug\net6.0-windows\aplication.deps.json
+C:\Users\manana\source\repos\aplication\aplication\bin\Debug\net6.0-windows\aplication.runtimeconfig.json
+C:\Users\manana\source\repos\aplication\aplication\bin\Debug\net6.0-windows\aplication.dll
+C:\Users\manana\source\repos\aplication\aplication\bin\Debug\net6.0-windows\aplication.pdb
+C:\Users\manana\source\repos\aplication\aplication\obj\Debug\net6.0-windows\aplication.csproj.AssemblyReference.cache
+C:\Users\manana\source\repos\aplication\aplication\obj\Debug\net6.0-windows\aplication.Form1.resources
+C:\Users\manana\source\repos\aplication\aplication\obj\Debug\net6.0-windows\aplication.csproj.GenerateResource.cache
+C:\Users\manana\source\repos\aplication\aplication\obj\Debug\net6.0-windows\aplication.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\manana\source\repos\aplication\aplication\obj\Debug\net6.0-windows\aplication.AssemblyInfoInputs.cache
+C:\Users\manana\source\repos\aplication\aplication\obj\Debug\net6.0-windows\aplication.AssemblyInfo.cs
+C:\Users\manana\source\repos\aplication\aplication\obj\Debug\net6.0-windows\aplication.csproj.CoreCompileInputs.cache
+C:\Users\manana\source\repos\aplication\aplication\obj\Debug\net6.0-windows\aplication.dll
+C:\Users\manana\source\repos\aplication\aplication\obj\Debug\net6.0-windows\refint\aplication.dll
+C:\Users\manana\source\repos\aplication\aplication\obj\Debug\net6.0-windows\aplication.pdb
+C:\Users\manana\source\repos\aplication\aplication\obj\Debug\net6.0-windows\aplication.genruntimeconfig.cache
+C:\Users\manana\source\repos\aplication\aplication\obj\Debug\net6.0-windows\ref\aplication.dll
