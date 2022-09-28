@@ -1,0 +1,17 @@
+C:\Users\manana\source\repos\Ejercicio_6\Ejercicio_6\bin\Debug\net6.0-windows\Ejercicio_6.exe
+C:\Users\manana\source\repos\Ejercicio_6\Ejercicio_6\bin\Debug\net6.0-windows\Ejercicio_6.deps.json
+C:\Users\manana\source\repos\Ejercicio_6\Ejercicio_6\bin\Debug\net6.0-windows\Ejercicio_6.runtimeconfig.json
+C:\Users\manana\source\repos\Ejercicio_6\Ejercicio_6\bin\Debug\net6.0-windows\Ejercicio_6.dll
+C:\Users\manana\source\repos\Ejercicio_6\Ejercicio_6\bin\Debug\net6.0-windows\Ejercicio_6.pdb
+C:\Users\manana\source\repos\Ejercicio_6\Ejercicio_6\obj\Debug\net6.0-windows\Ejercicio_6.csproj.AssemblyReference.cache
+C:\Users\manana\source\repos\Ejercicio_6\Ejercicio_6\obj\Debug\net6.0-windows\Ejercicio_6.Form1.resources
+C:\Users\manana\source\repos\Ejercicio_6\Ejercicio_6\obj\Debug\net6.0-windows\Ejercicio_6.csproj.GenerateResource.cache
+C:\Users\manana\source\repos\Ejercicio_6\Ejercicio_6\obj\Debug\net6.0-windows\Ejercicio_6.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\manana\source\repos\Ejercicio_6\Ejercicio_6\obj\Debug\net6.0-windows\Ejercicio_6.AssemblyInfoInputs.cache
+C:\Users\manana\source\repos\Ejercicio_6\Ejercicio_6\obj\Debug\net6.0-windows\Ejercicio_6.AssemblyInfo.cs
+C:\Users\manana\source\repos\Ejercicio_6\Ejercicio_6\obj\Debug\net6.0-windows\Ejercicio_6.csproj.CoreCompileInputs.cache
+C:\Users\manana\source\repos\Ejercicio_6\Ejercicio_6\obj\Debug\net6.0-windows\Ejercicio_6.dll
+C:\Users\manana\source\repos\Ejercicio_6\Ejercicio_6\obj\Debug\net6.0-windows\refint\Ejercicio_6.dll
+C:\Users\manana\source\repos\Ejercicio_6\Ejercicio_6\obj\Debug\net6.0-windows\Ejercicio_6.pdb
+C:\Users\manana\source\repos\Ejercicio_6\Ejercicio_6\obj\Debug\net6.0-windows\Ejercicio_6.genruntimeconfig.cache
+C:\Users\manana\source\repos\Ejercicio_6\Ejercicio_6\obj\Debug\net6.0-windows\ref\Ejercicio_6.dll
