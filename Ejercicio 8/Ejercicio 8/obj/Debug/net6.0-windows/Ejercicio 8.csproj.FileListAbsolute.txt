@@ -1,0 +1,17 @@
+C:\Users\manana\source\repos\Ejercicio 8\Ejercicio 8\bin\Debug\net6.0-windows\Ejercicio 8.exe
+C:\Users\manana\source\repos\Ejercicio 8\Ejercicio 8\bin\Debug\net6.0-windows\Ejercicio 8.deps.json
+C:\Users\manana\source\repos\Ejercicio 8\Ejercicio 8\bin\Debug\net6.0-windows\Ejercicio 8.runtimeconfig.json
+C:\Users\manana\source\repos\Ejercicio 8\Ejercicio 8\bin\Debug\net6.0-windows\Ejercicio 8.dll
+C:\Users\manana\source\repos\Ejercicio 8\Ejercicio 8\bin\Debug\net6.0-windows\Ejercicio 8.pdb
+C:\Users\manana\source\repos\Ejercicio 8\Ejercicio 8\obj\Debug\net6.0-windows\Ejercicio 8.csproj.AssemblyReference.cache
+C:\Users\manana\source\repos\Ejercicio 8\Ejercicio 8\obj\Debug\net6.0-windows\Ejercicio_8.Form1.resources
+C:\Users\manana\source\repos\Ejercicio 8\Ejercicio 8\obj\Debug\net6.0-windows\Ejercicio 8.csproj.GenerateResource.cache
+C:\Users\manana\source\repos\Ejercicio 8\Ejercicio 8\obj\Debug\net6.0-windows\Ejercicio 8.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\manana\source\repos\Ejercicio 8\Ejercicio 8\obj\Debug\net6.0-windows\Ejercicio 8.AssemblyInfoInputs.cache
+C:\Users\manana\source\repos\Ejercicio 8\Ejercicio 8\obj\Debug\net6.0-windows\Ejercicio 8.AssemblyInfo.cs
+C:\Users\manana\source\repos\Ejercicio 8\Ejercicio 8\obj\Debug\net6.0-windows\Ejercicio 8.csproj.CoreCompileInputs.cache
+C:\Users\manana\source\repos\Ejercicio 8\Ejercicio 8\obj\Debug\net6.0-windows\Ejercicio 8.dll
+C:\Users\manana\source\repos\Ejercicio 8\Ejercicio 8\obj\Debug\net6.0-windows\refint\Ejercicio 8.dll
+C:\Users\manana\source\repos\Ejercicio 8\Ejercicio 8\obj\Debug\net6.0-windows\Ejercicio 8.pdb
+C:\Users\manana\source\repos\Ejercicio 8\Ejercicio 8\obj\Debug\net6.0-windows\Ejercicio 8.genruntimeconfig.cache
+C:\Users\manana\source\repos\Ejercicio 8\Ejercicio 8\obj\Debug\net6.0-windows\ref\Ejercicio 8.dll
