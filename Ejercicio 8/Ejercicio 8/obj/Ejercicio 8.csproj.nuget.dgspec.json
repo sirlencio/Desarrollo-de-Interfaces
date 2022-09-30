@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\manana\\source\\repos\\Ejercicio 8\\Ejercicio 8\\Ejercicio 8.csproj": {}
+    "C:\\Users\\manana\\Desktop\\Desarrollo-de-Interfaces\\Ejercicio 8\\Ejercicio 8\\Ejercicio 8.csproj": {}
   },
   "projects": {
-    "C:\\Users\\manana\\source\\repos\\Ejercicio 8\\Ejercicio 8\\Ejercicio 8.csproj": {
+    "C:\\Users\\manana\\Desktop\\Desarrollo-de-Interfaces\\Ejercicio 8\\Ejercicio 8\\Ejercicio 8.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\manana\\source\\repos\\Ejercicio 8\\Ejercicio 8\\Ejercicio 8.csproj",
+        "projectUniqueName": "C:\\Users\\manana\\Desktop\\Desarrollo-de-Interfaces\\Ejercicio 8\\Ejercicio 8\\Ejercicio 8.csproj",
         "projectName": "Ejercicio 8",
-        "projectPath": "C:\\Users\\manana\\source\\repos\\Ejercicio 8\\Ejercicio 8\\Ejercicio 8.csproj",
+        "projectPath": "C:\\Users\\manana\\Desktop\\Desarrollo-de-Interfaces\\Ejercicio 8\\Ejercicio 8\\Ejercicio 8.csproj",
         "packagesPath": "C:\\Users\\manana\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\manana\\source\\repos\\Ejercicio 8\\Ejercicio 8\\obj\\",
+        "outputPath": "C:\\Users\\manana\\Desktop\\Desarrollo-de-Interfaces\\Ejercicio 8\\Ejercicio 8\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\manana\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,0 +1,17 @@
+C:\Users\manana\Desktop\Desarrollo-de-Interfaces\Ejercicio 8\Ejercicio 10\bin\Debug\net6.0-windows\Ejercicio 10.exe
+C:\Users\manana\Desktop\Desarrollo-de-Interfaces\Ejercicio 8\Ejercicio 10\bin\Debug\net6.0-windows\Ejercicio 10.deps.json
+C:\Users\manana\Desktop\Desarrollo-de-Interfaces\Ejercicio 8\Ejercicio 10\bin\Debug\net6.0-windows\Ejercicio 10.runtimeconfig.json
+C:\Users\manana\Desktop\Desarrollo-de-Interfaces\Ejercicio 8\Ejercicio 10\bin\Debug\net6.0-windows\Ejercicio 10.dll
+C:\Users\manana\Desktop\Desarrollo-de-Interfaces\Ejercicio 8\Ejercicio 10\bin\Debug\net6.0-windows\Ejercicio 10.pdb
+C:\Users\manana\Desktop\Desarrollo-de-Interfaces\Ejercicio 8\Ejercicio 10\obj\Debug\net6.0-windows\Ejercicio 10.csproj.AssemblyReference.cache
+C:\Users\manana\Desktop\Desarrollo-de-Interfaces\Ejercicio 8\Ejercicio 10\obj\Debug\net6.0-windows\Ejercicio_10.Form1.resources
+C:\Users\manana\Desktop\Desarrollo-de-Interfaces\Ejercicio 8\Ejercicio 10\obj\Debug\net6.0-windows\Ejercicio 10.csproj.GenerateResource.cache
+C:\Users\manana\Desktop\Desarrollo-de-Interfaces\Ejercicio 8\Ejercicio 10\obj\Debug\net6.0-windows\Ejercicio 10.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\manana\Desktop\Desarrollo-de-Interfaces\Ejercicio 8\Ejercicio 10\obj\Debug\net6.0-windows\Ejercicio 10.AssemblyInfoInputs.cache
+C:\Users\manana\Desktop\Desarrollo-de-Interfaces\Ejercicio 8\Ejercicio 10\obj\Debug\net6.0-windows\Ejercicio 10.AssemblyInfo.cs
+C:\Users\manana\Desktop\Desarrollo-de-Interfaces\Ejercicio 8\Ejercicio 10\obj\Debug\net6.0-windows\Ejercicio 10.csproj.CoreCompileInputs.cache
+C:\Users\manana\Desktop\Desarrollo-de-Interfaces\Ejercicio 8\Ejercicio 10\obj\Debug\net6.0-windows\Ejercicio 10.dll
+C:\Users\manana\Desktop\Desarrollo-de-Interfaces\Ejercicio 8\Ejercicio 10\obj\Debug\net6.0-windows\refint\Ejercicio 10.dll
+C:\Users\manana\Desktop\Desarrollo-de-Interfaces\Ejercicio 8\Ejercicio 10\obj\Debug\net6.0-windows\Ejercicio 10.pdb
+C:\Users\manana\Desktop\Desarrollo-de-Interfaces\Ejercicio 8\Ejercicio 10\obj\Debug\net6.0-windows\Ejercicio 10.genruntimeconfig.cache
+C:\Users\manana\Desktop\Desarrollo-de-Interfaces\Ejercicio 8\Ejercicio 10\obj\Debug\net6.0-windows\ref\Ejercicio 10.dll
