@@ -1,0 +1,17 @@
+C:\Users\Carlos\source\repos\Ejercicio 11\Ejercicio 11\obj\Debug\net6.0-windows\Ejercicio 11.csproj.AssemblyReference.cache
+C:\Users\Carlos\source\repos\Ejercicio 11\Ejercicio 11\obj\Debug\net6.0-windows\Ejercicio_11.Ejercicio11.resources
+C:\Users\Carlos\source\repos\Ejercicio 11\Ejercicio 11\obj\Debug\net6.0-windows\Ejercicio 11.csproj.GenerateResource.cache
+C:\Users\Carlos\source\repos\Ejercicio 11\Ejercicio 11\obj\Debug\net6.0-windows\Ejercicio 11.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Carlos\source\repos\Ejercicio 11\Ejercicio 11\obj\Debug\net6.0-windows\Ejercicio 11.AssemblyInfoInputs.cache
+C:\Users\Carlos\source\repos\Ejercicio 11\Ejercicio 11\obj\Debug\net6.0-windows\Ejercicio 11.AssemblyInfo.cs
+C:\Users\Carlos\source\repos\Ejercicio 11\Ejercicio 11\obj\Debug\net6.0-windows\Ejercicio 11.csproj.CoreCompileInputs.cache
+C:\Users\Carlos\source\repos\Ejercicio 11\Ejercicio 11\bin\Debug\net6.0-windows\Ejercicio 11.exe
+C:\Users\Carlos\source\repos\Ejercicio 11\Ejercicio 11\bin\Debug\net6.0-windows\Ejercicio 11.deps.json
+C:\Users\Carlos\source\repos\Ejercicio 11\Ejercicio 11\bin\Debug\net6.0-windows\Ejercicio 11.runtimeconfig.json
+C:\Users\Carlos\source\repos\Ejercicio 11\Ejercicio 11\bin\Debug\net6.0-windows\Ejercicio 11.dll
+C:\Users\Carlos\source\repos\Ejercicio 11\Ejercicio 11\bin\Debug\net6.0-windows\Ejercicio 11.pdb
+C:\Users\Carlos\source\repos\Ejercicio 11\Ejercicio 11\obj\Debug\net6.0-windows\Ejercicio 11.dll
+C:\Users\Carlos\source\repos\Ejercicio 11\Ejercicio 11\obj\Debug\net6.0-windows\refint\Ejercicio 11.dll
+C:\Users\Carlos\source\repos\Ejercicio 11\Ejercicio 11\obj\Debug\net6.0-windows\Ejercicio 11.pdb
+C:\Users\Carlos\source\repos\Ejercicio 11\Ejercicio 11\obj\Debug\net6.0-windows\Ejercicio 11.genruntimeconfig.cache
+C:\Users\Carlos\source\repos\Ejercicio 11\Ejercicio 11\obj\Debug\net6.0-windows\ref\Ejercicio 11.dll
