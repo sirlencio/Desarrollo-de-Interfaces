@@ -1,0 +1,17 @@
+C:\Users\manana\source\repos\Ejercicio 12\Ejercicio 12\bin\Debug\net6.0-windows\Ejercicio 12.exe
+C:\Users\manana\source\repos\Ejercicio 12\Ejercicio 12\bin\Debug\net6.0-windows\Ejercicio 12.deps.json
+C:\Users\manana\source\repos\Ejercicio 12\Ejercicio 12\bin\Debug\net6.0-windows\Ejercicio 12.runtimeconfig.json
+C:\Users\manana\source\repos\Ejercicio 12\Ejercicio 12\bin\Debug\net6.0-windows\Ejercicio 12.dll
+C:\Users\manana\source\repos\Ejercicio 12\Ejercicio 12\bin\Debug\net6.0-windows\Ejercicio 12.pdb
+C:\Users\manana\source\repos\Ejercicio 12\Ejercicio 12\obj\Debug\net6.0-windows\Ejercicio 12.csproj.AssemblyReference.cache
+C:\Users\manana\source\repos\Ejercicio 12\Ejercicio 12\obj\Debug\net6.0-windows\Ejercicio_12.Form1.resources
+C:\Users\manana\source\repos\Ejercicio 12\Ejercicio 12\obj\Debug\net6.0-windows\Ejercicio 12.csproj.GenerateResource.cache
+C:\Users\manana\source\repos\Ejercicio 12\Ejercicio 12\obj\Debug\net6.0-windows\Ejercicio 12.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\manana\source\repos\Ejercicio 12\Ejercicio 12\obj\Debug\net6.0-windows\Ejercicio 12.AssemblyInfoInputs.cache
+C:\Users\manana\source\repos\Ejercicio 12\Ejercicio 12\obj\Debug\net6.0-windows\Ejercicio 12.AssemblyInfo.cs
+C:\Users\manana\source\repos\Ejercicio 12\Ejercicio 12\obj\Debug\net6.0-windows\Ejercicio 12.csproj.CoreCompileInputs.cache
+C:\Users\manana\source\repos\Ejercicio 12\Ejercicio 12\obj\Debug\net6.0-windows\Ejercicio 12.dll
+C:\Users\manana\source\repos\Ejercicio 12\Ejercicio 12\obj\Debug\net6.0-windows\refint\Ejercicio 12.dll
+C:\Users\manana\source\repos\Ejercicio 12\Ejercicio 12\obj\Debug\net6.0-windows\Ejercicio 12.pdb
+C:\Users\manana\source\repos\Ejercicio 12\Ejercicio 12\obj\Debug\net6.0-windows\Ejercicio 12.genruntimeconfig.cache
+C:\Users\manana\source\repos\Ejercicio 12\Ejercicio 12\obj\Debug\net6.0-windows\ref\Ejercicio 12.dll
