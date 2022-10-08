@@ -35,8 +35,11 @@ namespace Ejercicio_11
             int rdo = sies + noes + nose;
             if (rdo > 0) { 
             si.Text = sies + " sies   " + (sies * 100) / rdo + "%";
+                progressBar1.Value = (sies * 100) / rdo;
             no.Text = noes + " noes   " + (noes * 100) / rdo + "%";
+                progressBar2.Value = (noes * 100) / rdo;
             nsnc.Text = nose + " no saben   " + (nose * 100) / rdo + "%";
+                progressBar3.Value = (nose * 100) / rdo;
             }
             else
             {

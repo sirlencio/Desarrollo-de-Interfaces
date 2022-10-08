@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Carlos\\source\\repos\\Ejercicio 11\\Ejercicio 11\\Ejercicio 11.csproj": {}
+    "C:\\Users\\manana\\Desktop\\Desarrollo-de-Interfaces\\Ejercicio 11\\Ejercicio 11\\Ejercicio 11.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Carlos\\source\\repos\\Ejercicio 11\\Ejercicio 11\\Ejercicio 11.csproj": {
+    "C:\\Users\\manana\\Desktop\\Desarrollo-de-Interfaces\\Ejercicio 11\\Ejercicio 11\\Ejercicio 11.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Carlos\\source\\repos\\Ejercicio 11\\Ejercicio 11\\Ejercicio 11.csproj",
+        "projectUniqueName": "C:\\Users\\manana\\Desktop\\Desarrollo-de-Interfaces\\Ejercicio 11\\Ejercicio 11\\Ejercicio 11.csproj",
         "projectName": "Ejercicio 11",
-        "projectPath": "C:\\Users\\Carlos\\source\\repos\\Ejercicio 11\\Ejercicio 11\\Ejercicio 11.csproj",
-        "packagesPath": "C:\\Users\\Carlos\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Carlos\\source\\repos\\Ejercicio 11\\Ejercicio 11\\obj\\",
+        "projectPath": "C:\\Users\\manana\\Desktop\\Desarrollo-de-Interfaces\\Ejercicio 11\\Ejercicio 11\\Ejercicio 11.csproj",
+        "packagesPath": "C:\\Users\\manana\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\manana\\Desktop\\Desarrollo-de-Interfaces\\Ejercicio 11\\Ejercicio 11\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Carlos\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\manana\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
