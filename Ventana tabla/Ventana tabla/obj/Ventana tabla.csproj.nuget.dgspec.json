@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Carlos\\source\\repos\\Ventana tabla\\Ventana tabla\\Ventana tabla.csproj": {}
+    "C:\\Users\\Carlos\\Desktop\\Desarrollo-de-Interfaces\\Ventana tabla\\Ventana tabla\\Ventana tabla.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Carlos\\source\\repos\\Ventana tabla\\Ventana tabla\\Ventana tabla.csproj": {
+    "C:\\Users\\Carlos\\Desktop\\Desarrollo-de-Interfaces\\Ventana tabla\\Ventana tabla\\Ventana tabla.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Carlos\\source\\repos\\Ventana tabla\\Ventana tabla\\Ventana tabla.csproj",
+        "projectUniqueName": "C:\\Users\\Carlos\\Desktop\\Desarrollo-de-Interfaces\\Ventana tabla\\Ventana tabla\\Ventana tabla.csproj",
         "projectName": "Ventana tabla",
-        "projectPath": "C:\\Users\\Carlos\\source\\repos\\Ventana tabla\\Ventana tabla\\Ventana tabla.csproj",
+        "projectPath": "C:\\Users\\Carlos\\Desktop\\Desarrollo-de-Interfaces\\Ventana tabla\\Ventana tabla\\Ventana tabla.csproj",
         "packagesPath": "C:\\Users\\Carlos\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Carlos\\source\\repos\\Ventana tabla\\Ventana tabla\\obj\\",
+        "outputPath": "C:\\Users\\Carlos\\Desktop\\Desarrollo-de-Interfaces\\Ventana tabla\\Ventana tabla\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Carlos\\AppData\\Roaming\\NuGet\\NuGet.Config",

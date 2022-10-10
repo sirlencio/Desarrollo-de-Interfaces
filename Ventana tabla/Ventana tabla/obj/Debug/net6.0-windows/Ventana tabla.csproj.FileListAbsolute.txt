@@ -16,3 +16,21 @@ C:\Users\Carlos\source\repos\Ventana tabla\Ventana tabla\obj\Debug\net6.0-window
 C:\Users\Carlos\source\repos\Ventana tabla\Ventana tabla\obj\Debug\net6.0-windows\Ventana tabla.pdb
 C:\Users\Carlos\source\repos\Ventana tabla\Ventana tabla\obj\Debug\net6.0-windows\Ventana tabla.genruntimeconfig.cache
 C:\Users\Carlos\source\repos\Ventana tabla\Ventana tabla\obj\Debug\net6.0-windows\ref\Ventana tabla.dll
+C:\Users\Carlos\Desktop\Desarrollo-de-Interfaces\Ventana tabla\Ventana tabla\bin\Debug\net6.0-windows\Ventana tabla.exe
+C:\Users\Carlos\Desktop\Desarrollo-de-Interfaces\Ventana tabla\Ventana tabla\bin\Debug\net6.0-windows\Ventana tabla.deps.json
+C:\Users\Carlos\Desktop\Desarrollo-de-Interfaces\Ventana tabla\Ventana tabla\bin\Debug\net6.0-windows\Ventana tabla.runtimeconfig.json
+C:\Users\Carlos\Desktop\Desarrollo-de-Interfaces\Ventana tabla\Ventana tabla\bin\Debug\net6.0-windows\Ventana tabla.dll
+C:\Users\Carlos\Desktop\Desarrollo-de-Interfaces\Ventana tabla\Ventana tabla\bin\Debug\net6.0-windows\Ventana tabla.pdb
+C:\Users\Carlos\Desktop\Desarrollo-de-Interfaces\Ventana tabla\Ventana tabla\obj\Debug\net6.0-windows\Ventana tabla.csproj.AssemblyReference.cache
+C:\Users\Carlos\Desktop\Desarrollo-de-Interfaces\Ventana tabla\Ventana tabla\obj\Debug\net6.0-windows\Ventana_tabla.Form1.resources
+C:\Users\Carlos\Desktop\Desarrollo-de-Interfaces\Ventana tabla\Ventana tabla\obj\Debug\net6.0-windows\Ventana_tabla.Form2.resources
+C:\Users\Carlos\Desktop\Desarrollo-de-Interfaces\Ventana tabla\Ventana tabla\obj\Debug\net6.0-windows\Ventana tabla.csproj.GenerateResource.cache
+C:\Users\Carlos\Desktop\Desarrollo-de-Interfaces\Ventana tabla\Ventana tabla\obj\Debug\net6.0-windows\Ventana tabla.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Carlos\Desktop\Desarrollo-de-Interfaces\Ventana tabla\Ventana tabla\obj\Debug\net6.0-windows\Ventana tabla.AssemblyInfoInputs.cache
+C:\Users\Carlos\Desktop\Desarrollo-de-Interfaces\Ventana tabla\Ventana tabla\obj\Debug\net6.0-windows\Ventana tabla.AssemblyInfo.cs
+C:\Users\Carlos\Desktop\Desarrollo-de-Interfaces\Ventana tabla\Ventana tabla\obj\Debug\net6.0-windows\Ventana tabla.csproj.CoreCompileInputs.cache
+C:\Users\Carlos\Desktop\Desarrollo-de-Interfaces\Ventana tabla\Ventana tabla\obj\Debug\net6.0-windows\Ventana tabla.dll
+C:\Users\Carlos\Desktop\Desarrollo-de-Interfaces\Ventana tabla\Ventana tabla\obj\Debug\net6.0-windows\refint\Ventana tabla.dll
+C:\Users\Carlos\Desktop\Desarrollo-de-Interfaces\Ventana tabla\Ventana tabla\obj\Debug\net6.0-windows\Ventana tabla.pdb
+C:\Users\Carlos\Desktop\Desarrollo-de-Interfaces\Ventana tabla\Ventana tabla\obj\Debug\net6.0-windows\Ventana tabla.genruntimeconfig.cache
+C:\Users\Carlos\Desktop\Desarrollo-de-Interfaces\Ventana tabla\Ventana tabla\obj\Debug\net6.0-windows\ref\Ventana tabla.dll
