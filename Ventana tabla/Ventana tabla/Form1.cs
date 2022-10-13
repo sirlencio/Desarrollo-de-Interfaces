@@ -30,12 +30,6 @@ namespace Ventana_tabla
             form2.ShowDialog();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            button2.Enabled = false;
-            button3.Enabled = false;
-        }
-
         private void button3_Click(object sender, EventArgs e)
         {
             int index = dataGridView1.SelectedRows[0].Index;
@@ -59,34 +53,31 @@ namespace Ventana_tabla
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            DataGridView filtro = new DataGridView();
-            DataGridView aux = new DataGridView();
-            aux = dataGridView1;
-            filtro.Columns.Add("0", "Nombre");
-            filtro.Columns.Add("0", "betoven");
-            filtro.Rows.Add("Pepe", "9");
-            string busqueda = textBox1.Text;
-            dataGridView1.Rows.Clear();
-            foreach (DataGridViewRow r in filtro.SelectedRows)
+            string busqueda = textBox1.Text.ToLower();
+            if (busqueda.Length != 0)
             {
-                int index = dataGridView1.Rows.Add(r.Clone() as DataGridViewRow);
-                foreach (DataGridViewCell o in r.Cells)
+                for (int i = 0; i < dataGridView1.Rows.Count - 1; i++)
                 {
-                    dataGridView1.Rows[index].Cells[o.ColumnIndex].Value = o.Value;
+                    string nombre = dataGridView1.Rows[i].Cells[0].Value + "";
+                    if (nombre.ToLower().Contains(busqueda))
+                    {
+                        dataGridView1.Rows[i].Visible = true;
+                    }
+                    else
+                    {
+                        dataGridView1.Rows[i].Visible = false;
+                    }
                 }
             }
-            /* for (int i = 0; i < dataGridView1.Rows.Count; i++)
-             {
-                 string nombre = dataGridView1.Rows[i].Cells[0].Value + "";
-                 if (nombre.Contains(busqueda))
-                 {
-                     String not = dataGridView1.Rows[i].Cells[1].Value + "";
+            else
+            {
+                for(int j = 0; j<dataGridView1.Rows.Count - 1; j++)
+                {
+                    dataGridView1.Rows[j].Visible = true;
+                }
+            }
 
-                     //filtro.Rows.Add(nombre, not);
-                     dataGridView1.DataSource = filtro;
-                     label2.Text = nombre;
-                 }
-             }*/
+            
         }
     }
 }

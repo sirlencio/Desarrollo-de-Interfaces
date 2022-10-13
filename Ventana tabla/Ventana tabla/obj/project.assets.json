@@ -8,19 +8,19 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Carlos\\.nuget\\packages\\": {}
+    "C:\\Users\\manana\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Carlos\\Desktop\\Desarrollo-de-Interfaces\\Ventana tabla\\Ventana tabla\\Ventana tabla.csproj",
+      "projectUniqueName": "C:\\Users\\manana\\Desktop\\Desarrollo-de-Interfaces\\Ventana tabla\\Ventana tabla\\Ventana tabla.csproj",
       "projectName": "Ventana tabla",
-      "projectPath": "C:\\Users\\Carlos\\Desktop\\Desarrollo-de-Interfaces\\Ventana tabla\\Ventana tabla\\Ventana tabla.csproj",
-      "packagesPath": "C:\\Users\\Carlos\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Carlos\\Desktop\\Desarrollo-de-Interfaces\\Ventana tabla\\Ventana tabla\\obj\\",
+      "projectPath": "C:\\Users\\manana\\Desktop\\Desarrollo-de-Interfaces\\Ventana tabla\\Ventana tabla\\Ventana tabla.csproj",
+      "packagesPath": "C:\\Users\\manana\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\manana\\Desktop\\Desarrollo-de-Interfaces\\Ventana tabla\\Ventana tabla\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Carlos\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\manana\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -64,7 +64,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }
