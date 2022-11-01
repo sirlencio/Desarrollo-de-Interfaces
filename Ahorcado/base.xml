@@ -1,0 +1,14 @@
+<categorias>
+    <animales>
+        <animal>Perro</animal>
+        <animal>Gato</animal>
+        <animal>Loro</animal>
+        <animal>Cacatua</animal>
+        <animal>Caballo</animal>
+    </animales>
+    <colores>
+        <color>Rojo</color>
+        <color>Azul</color>
+        <color>Amarillo</color>
+    </colores>
+</categorias>
