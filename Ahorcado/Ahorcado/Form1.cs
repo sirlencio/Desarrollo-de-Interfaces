@@ -23,11 +23,10 @@ namespace Ahorcado
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (comboBox1.SelectedIndex == 0)
+            if (comboBox1.SelectedText == "")
             {
                 Form2 form2 = new Form2(baraja);
                 form2.ShowDialog();
-                this.Close();
             }
             else
             {
@@ -44,7 +43,7 @@ namespace Ahorcado
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             String nombrenodo = comboBox1.Text;
-            XmlNode node = doc.DocumentElement.SelectSingleNode("/categorias/" + nombrenodo);
+            XmlNode node = doc.DocumentElement.SelectSingleNode("//" + nombrenodo);
             int cont = 0;
             foreach (XmlNode node1 in node)
             {

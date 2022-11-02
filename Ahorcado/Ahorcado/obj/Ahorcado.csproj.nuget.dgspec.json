@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Carlos\\source\\repos\\Ahorcado\\Ahorcado\\Ahorcado.csproj": {}
+    "C:\\Users\\Carlos\\Desktop\\Desarrollo-de-Interfaces\\Ahorcado\\Ahorcado\\Ahorcado.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Carlos\\source\\repos\\Ahorcado\\Ahorcado\\Ahorcado.csproj": {
+    "C:\\Users\\Carlos\\Desktop\\Desarrollo-de-Interfaces\\Ahorcado\\Ahorcado\\Ahorcado.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Carlos\\source\\repos\\Ahorcado\\Ahorcado\\Ahorcado.csproj",
+        "projectUniqueName": "C:\\Users\\Carlos\\Desktop\\Desarrollo-de-Interfaces\\Ahorcado\\Ahorcado\\Ahorcado.csproj",
         "projectName": "Ahorcado",
-        "projectPath": "C:\\Users\\Carlos\\source\\repos\\Ahorcado\\Ahorcado\\Ahorcado.csproj",
+        "projectPath": "C:\\Users\\Carlos\\Desktop\\Desarrollo-de-Interfaces\\Ahorcado\\Ahorcado\\Ahorcado.csproj",
         "packagesPath": "C:\\Users\\Carlos\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Carlos\\source\\repos\\Ahorcado\\Ahorcado\\obj\\",
+        "outputPath": "C:\\Users\\Carlos\\Desktop\\Desarrollo-de-Interfaces\\Ahorcado\\Ahorcado\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Carlos\\AppData\\Roaming\\NuGet\\NuGet.Config",
