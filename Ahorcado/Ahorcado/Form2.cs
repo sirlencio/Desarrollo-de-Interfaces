@@ -21,7 +21,15 @@ namespace Ahorcado
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            label1.Text = baraja[0];
+        }
+        public void iniciar()
+        {
+        }
+
+        public void clickLetra(object sender, EventArgs e)
+        {
+            Label lb = (Label)sender;
+            palabraJugando.Text = lb.Text;
         }
     }
 }
