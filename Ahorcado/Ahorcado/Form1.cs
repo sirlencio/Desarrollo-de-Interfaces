@@ -23,9 +23,9 @@ namespace Ahorcado
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (comboBox1.SelectedText == "")
+            if (comboBox1.Text != "")
             {
-                Form2 form2 = new Form2(baraja);
+                Form2 form2 = new Form2(baraja, comboBox1.Text);
                 form2.ShowDialog();
             }
             else

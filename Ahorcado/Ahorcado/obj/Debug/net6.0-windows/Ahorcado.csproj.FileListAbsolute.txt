@@ -34,3 +34,4 @@ C:\Users\Carlos\Desktop\Desarrollo-de-Interfaces\Ahorcado\Ahorcado\obj\Debug\net
 C:\Users\Carlos\Desktop\Desarrollo-de-Interfaces\Ahorcado\Ahorcado\obj\Debug\net6.0-windows\Ahorcado.pdb
 C:\Users\Carlos\Desktop\Desarrollo-de-Interfaces\Ahorcado\Ahorcado\obj\Debug\net6.0-windows\Ahorcado.genruntimeconfig.cache
 C:\Users\Carlos\Desktop\Desarrollo-de-Interfaces\Ahorcado\Ahorcado\obj\Debug\net6.0-windows\ref\Ahorcado.dll
+C:\Users\Carlos\Desktop\Desarrollo-de-Interfaces\Ahorcado\Ahorcado\obj\Debug\net6.0-windows\Ahorcado.Properties.Resources.resources
