@@ -1,3 +1,5 @@
+using System.Collections;
+using System.ComponentModel;
 using System.Xml;
 
 namespace Ahorcado
@@ -6,11 +8,16 @@ namespace Ahorcado
     {
         XmlDocument doc = new XmlDocument();
         string[] baraja;
+        usuario user;
+        ArrayList array = new ArrayList();
         public Form1()
         {
             InitializeComponent();
         }
-
+        public void cargarArray()
+        {
+            array.Add(user);
+        }
         private void Form1_Load(object sender, EventArgs e)
         {
             doc.Load("../../../../base.xml");
@@ -25,8 +32,10 @@ namespace Ahorcado
         {
             if (comboBox1.Text != "")
             {
-                Form2 form2 = new Form2(baraja, comboBox1.Text);
+                user = new usuario();
+                Form2 form2 = new Form2(baraja, comboBox1.Text, user);
                 form2.ShowDialog();
+                cargarArray();
             }
             else
             {
@@ -58,6 +67,20 @@ namespace Ahorcado
                 cont++;
             }
         }
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form3 form = new Form3(array);
+            form.ShowDialog();
+        }
+    }
+    public class usuario
+    {
+        public string nombre = "user";
+        public int puntuacion = 0;
+        public int nronda = 0;
 
+        public usuario()
+        {
+        }
     }
 }

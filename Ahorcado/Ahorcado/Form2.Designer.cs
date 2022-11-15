@@ -644,7 +644,6 @@
             this.terminar.Size = new System.Drawing.Size(202, 33);
             this.terminar.TabIndex = 49;
             this.terminar.Text = "Terminar Partida";
-            this.terminar.Visible = false;
             this.terminar.Click += new System.EventHandler(this.terminar_Click);
             // 
             // reintentar
@@ -668,6 +667,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1087, 589);
+            this.ControlBox = false;
             this.Controls.Add(this.reintentar);
             this.Controls.Add(this.terminar);
             this.Controls.Add(this.revelar);

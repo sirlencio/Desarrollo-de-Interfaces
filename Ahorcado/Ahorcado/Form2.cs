@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualBasic;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,13 +16,15 @@ namespace Ahorcado
         string[] baraja;
         string palabra;
         char[] huecos;
-        int aciertos, fallos, ronda = 0;
+        int aciertos, fallos, ronda = 0, puntuacion = 0;
         Boolean perdido = false;
-        public Form2(string[] baraja, string cat)
+        usuario user;
+        public Form2(string[] baraja, string cat, usuario user)
         {
             InitializeComponent();
             this.baraja = baraja;
             labelCat.Text = "Categoria: " + cat;
+            this.user = user;
             iniciar();
         }
         public void iniciar()
@@ -68,8 +71,10 @@ namespace Ahorcado
             vida6.Visible = false;
             muerto.Visible = false;
             reintentar.Visible = false;
-            terminar.Visible = false;
+            terminar.Visible = true;
             perdido = false;
+            panel1.Visible = true;
+            revelar.Visible = true;
 
         }
         public Boolean comprobacion(string intro) //Metodo que comprueba si la letra introducida esta en la palabra
@@ -99,11 +104,13 @@ namespace Ahorcado
                 if (comprobacion(lb.Text)) //Si la letra esta en la palabra, sumamos un acierto
                 {
                     colorLetra(lb.Text, true);
+                    puntuacion = puntuacion + 2;
                     aciertos++;
                 }
                 else
                 {
                     colorLetra(lb.Text, false);
+                    puntuacion = puntuacion - 1;
                     fallos++;
                 }
             }
@@ -129,11 +136,13 @@ namespace Ahorcado
                             if (comprobacion(letraTecla))
                             {
                                 colorLetra(letraTecla, true);
+                                puntuacion = puntuacion + 2;
                                 aciertos++;
                             }
                             else
                             {
                                 colorLetra(letraTecla, false);
+                                puntuacion = puntuacion - 1;
                                 fallos++;
                             }
                         }
@@ -184,6 +193,7 @@ namespace Ahorcado
             //Si gana
             if (!labelJug.Text.Contains("_"))
             {
+                puntuacion = puntuacion + 10;
                 DialogResult dialog = MessageBox.Show("Has ganado!! \nQuieres seguir jugando?", "Felicidades", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
                 if (dialog == DialogResult.Yes)
                 {
@@ -204,6 +214,9 @@ namespace Ahorcado
                 }
                 else
                 {
+                    user.nombre = Interaction.InputBox("Introduzca el nombre de usuario", "Atencion", "user");
+                    user.puntuacion = puntuacion;
+                    user.nronda = ronda;
                     this.Close();
                 }
             }
@@ -240,6 +253,10 @@ namespace Ahorcado
                     labelJug.Text = palabra;
                     perdido = true;
                     panel1.Visible = false;
+                    terminar.Visible = true;
+                    reintentar.Visible = true;
+                    revelar.Visible = false;
+                    puntuacion = puntuacion - 5;
                     break;
             }
 
@@ -251,11 +268,13 @@ namespace Ahorcado
             panel1.Visible= false;
             labelJug.Text = palabra;
             perdido = true;
-            terminar.Visible= true;
             reintentar.Visible= true;
         }
         private void terminar_Click(object sender, EventArgs e)
         {
+            user.nombre = Interaction.InputBox("Introduzca el nombre de usuario", "Atencion", "user");
+            user.puntuacion = puntuacion;
+            user.nronda = ronda;
             this.Close();
         }
         private void reintentar_Click(object sender, EventArgs e)
