@@ -19,11 +19,10 @@ namespace Ahorcado
             foreach(usuario user in array)
             {
                 dataGridView1.Rows.Add(user.nombre, user.puntuacion, user.nronda);
-                dataGridView1.Sort(this.dataGridView1.Columns[1], ListSortDirection.Descending);
+                dataGridView1.Sort(dataGridView1.Columns[1], ListSortDirection.Descending);
                 dataGridView1.ClearSelection();
             }
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();

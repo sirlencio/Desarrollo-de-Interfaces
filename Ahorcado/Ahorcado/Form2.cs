@@ -17,7 +17,7 @@ namespace Ahorcado
         string palabra;
         char[] huecos;
         int aciertos, fallos, ronda = 0, puntuacion = 0;
-        Boolean perdido = false;
+        Boolean terminado = false;
         usuario user;
         public Form2(string[] baraja, string cat, usuario user)
         {
@@ -70,9 +70,10 @@ namespace Ahorcado
             vida5.Visible = false;
             vida6.Visible = false;
             muerto.Visible = false;
+            feliz.Visible = false;
             reintentar.Visible = false;
             terminar.Visible = true;
-            perdido = false;
+            terminado = false;
             panel1.Visible = true;
             revelar.Visible = true;
 
@@ -110,7 +111,6 @@ namespace Ahorcado
                 else
                 {
                     colorLetra(lb.Text, false);
-                    puntuacion = puntuacion - 1;
                     fallos++;
                 }
             }
@@ -120,7 +120,7 @@ namespace Ahorcado
         }
         private void form2TeclaPulsada(object sender, KeyEventArgs e) //Metodo que comprueba las teclas pulsadas por teclado
         {
-            if (!perdido) 
+            if (!terminado) 
             { 
             int valorTecla = e.KeyValue;
             string letraTecla = e.KeyData.ToString();
@@ -142,7 +142,6 @@ namespace Ahorcado
                             else
                             {
                                 colorLetra(letraTecla, false);
-                                puntuacion = puntuacion - 1;
                                 fallos++;
                             }
                         }
@@ -152,6 +151,7 @@ namespace Ahorcado
                             if (comprobacion("Ñ"))
                             {
                                 colorLetra("Ñ", true);
+                                puntuacion = puntuacion + 2;
                                 aciertos++;
                             }
                             else
@@ -190,76 +190,81 @@ namespace Ahorcado
         }
         private void juego()
         {
-            //Si gana
-            if (!labelJug.Text.Contains("_"))
+            if (ronda == 9)
             {
-                puntuacion = puntuacion + 10;
-                DialogResult dialog = MessageBox.Show("Has ganado!! \nQuieres seguir jugando?", "Felicidades", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
-                if (dialog == DialogResult.Yes)
-                {
-                    if (ronda == 9)
-                    {
-                        MessageBox.Show("Esta sera la ultima ronda", "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        iniciar();
-                    }
-                    else if(ronda == 10)
-                    {
-                        MessageBox.Show("Esta era la ultima ronda", "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                        this.Close();
-                    }
-                    else
-                    {
-                        iniciar();
-                    }
-                }
-                else
-                {
-                    user.nombre = Interaction.InputBox("Introduzca el nombre de usuario", "Atencion", "user");
-                    user.puntuacion = puntuacion;
-                    user.nronda = ronda;
-                    this.Close();
-                }
+                MessageBox.Show("Esta sera la ultima ronda", "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                
+            }else if(ronda == 10){
+                MessageBox.Show("Esta era la ultima ronda", "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                user.nombre = Interaction.InputBox("Introduzca el nombre de usuario", "Atencion", "user");
+                user.puntuacion = puntuacion;
+                user.nronda = ronda;
+                this.Close();
             }
-            //Si va perdiendo
+            //Control fallos
             switch (fallos)
             {
                 case 1:
-                    vida1.Visible= true;
-                    vivo.Visible= false;
+                    vida1.Visible = true;
+                    vivo.Visible = false;
+                    puntuacion = puntuacion - 1;
                     break;
                 case 2:
                     vida2.Visible = true;
                     vida1.Visible = false;
+                    puntuacion = puntuacion - 1;
                     break;
                 case 3:
                     vida3.Visible = true;
                     vida2.Visible = false;
+                    puntuacion = puntuacion - 1;
                     break;
                 case 4:
                     vida4.Visible = true;
                     vida3.Visible = false;
+                    puntuacion = puntuacion - 1;
                     break;
                 case 5:
                     vida5.Visible = true;
                     vida4.Visible = false;
+                    puntuacion = puntuacion - 1;
                     break;
                 case 6:
                     vida6.Visible = true;
                     vida5.Visible = false;
+                    puntuacion = puntuacion - 1;
                     break;
                 case 7:
                     muerto.Visible = true;
                     vida6.Visible = false;
                     labelJug.Text = palabra;
-                    perdido = true;
+                    terminado = true;
                     panel1.Visible = false;
                     terminar.Visible = true;
                     reintentar.Visible = true;
                     revelar.Visible = false;
                     puntuacion = puntuacion - 5;
+                    MessageBox.Show("Has perdido", "Lo siento", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     break;
             }
-
+            //Si gana
+            if (!labelJug.Text.Contains("_") && !terminado)
+            {
+                MessageBox.Show("Has ganado", "Felicidades", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                puntuacion = puntuacion + 10;
+                panel1.Visible = false;
+                terminado = true;
+                revelar.Visible = false;
+                reintentar.Visible = true;
+                feliz.Visible = true;
+                vivo.Visible = true;
+                vida1.Visible = false;
+                vida2.Visible = false;
+                vida3.Visible = false;
+                vida4.Visible = false;
+                vida5.Visible = false;
+                vida6.Visible = false;
+            }
         }
         private void revelar_Click(object sender, EventArgs e)
         {
@@ -267,7 +272,7 @@ namespace Ahorcado
             vivo.Visible= false;
             panel1.Visible= false;
             labelJug.Text = palabra;
-            perdido = true;
+            terminado = true;
             reintentar.Visible= true;
         }
         private void terminar_Click(object sender, EventArgs e)

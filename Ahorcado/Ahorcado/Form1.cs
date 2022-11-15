@@ -14,10 +14,6 @@ namespace Ahorcado
         {
             InitializeComponent();
         }
-        public void cargarArray()
-        {
-            array.Add(user);
-        }
         private void Form1_Load(object sender, EventArgs e)
         {
             doc.Load("../../../../base.xml");
@@ -35,7 +31,7 @@ namespace Ahorcado
                 user = new usuario();
                 Form2 form2 = new Form2(baraja, comboBox1.Text, user);
                 form2.ShowDialog();
-                cargarArray();
+                array.Add(user);
             }
             else
             {

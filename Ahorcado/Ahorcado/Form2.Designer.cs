@@ -75,6 +75,7 @@
             this.revelar = new System.Windows.Forms.Label();
             this.terminar = new System.Windows.Forms.Label();
             this.reintentar = new System.Windows.Forms.Label();
+            this.feliz = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.vivo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vida1)).BeginInit();
@@ -84,6 +85,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.vida5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vida6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.muerto)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.feliz)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -660,6 +662,18 @@
             this.reintentar.Visible = false;
             this.reintentar.Click += new System.EventHandler(this.reintentar_Click);
             // 
+            // feliz
+            // 
+            this.feliz.BackColor = System.Drawing.Color.Transparent;
+            this.feliz.Image = ((System.Drawing.Image)(resources.GetObject("feliz.Image")));
+            this.feliz.Location = new System.Drawing.Point(185, 196);
+            this.feliz.Name = "feliz";
+            this.feliz.Size = new System.Drawing.Size(200, 200);
+            this.feliz.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.feliz.TabIndex = 51;
+            this.feliz.TabStop = false;
+            this.feliz.Visible = false;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -668,6 +682,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1087, 589);
             this.ControlBox = false;
+            this.Controls.Add(this.feliz);
             this.Controls.Add(this.reintentar);
             this.Controls.Add(this.terminar);
             this.Controls.Add(this.revelar);
@@ -702,6 +717,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.vida5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vida6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.muerto)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.feliz)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -755,5 +771,6 @@
         private Label revelar;
         private Label terminar;
         private Label reintentar;
+        private PictureBox feliz;
     }
 }
