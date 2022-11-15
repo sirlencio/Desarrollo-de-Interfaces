@@ -55,3 +55,4 @@ C:\Users\manana\Desktop\Desarrollo-de-Interfaces\Ahorcado\Ahorcado\obj\Debug\net
 C:\Users\manana\Desktop\Desarrollo-de-Interfaces\Ahorcado\Ahorcado\obj\Debug\net6.0-windows\Ahorcado.genruntimeconfig.cache
 C:\Users\manana\Desktop\Desarrollo-de-Interfaces\Ahorcado\Ahorcado\obj\Debug\net6.0-windows\ref\Ahorcado.dll
 C:\Users\manana\Desktop\Desarrollo-de-Interfaces\Ahorcado\Ahorcado\obj\Debug\net6.0-windows\Ahorcado.Form3.resources
+C:\Users\Carlos\Desktop\Desarrollo-de-Interfaces\Ahorcado\Ahorcado\obj\Debug\net6.0-windows\Ahorcado.Form3.resources
