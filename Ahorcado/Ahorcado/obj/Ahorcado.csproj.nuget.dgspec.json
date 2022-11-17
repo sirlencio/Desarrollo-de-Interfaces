@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Carlos\\Desktop\\Desarrollo-de-Interfaces\\Ahorcado\\Ahorcado\\Ahorcado.csproj": {}
+    "C:\\Users\\manana\\Desktop\\Desarrollo-de-Interfaces\\Ahorcado\\Ahorcado\\Ahorcado.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Carlos\\Desktop\\Desarrollo-de-Interfaces\\Ahorcado\\Ahorcado\\Ahorcado.csproj": {
+    "C:\\Users\\manana\\Desktop\\Desarrollo-de-Interfaces\\Ahorcado\\Ahorcado\\Ahorcado.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Carlos\\Desktop\\Desarrollo-de-Interfaces\\Ahorcado\\Ahorcado\\Ahorcado.csproj",
+        "projectUniqueName": "C:\\Users\\manana\\Desktop\\Desarrollo-de-Interfaces\\Ahorcado\\Ahorcado\\Ahorcado.csproj",
         "projectName": "Ahorcado",
-        "projectPath": "C:\\Users\\Carlos\\Desktop\\Desarrollo-de-Interfaces\\Ahorcado\\Ahorcado\\Ahorcado.csproj",
-        "packagesPath": "C:\\Users\\Carlos\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Carlos\\Desktop\\Desarrollo-de-Interfaces\\Ahorcado\\Ahorcado\\obj\\",
+        "projectPath": "C:\\Users\\manana\\Desktop\\Desarrollo-de-Interfaces\\Ahorcado\\Ahorcado\\Ahorcado.csproj",
+        "packagesPath": "C:\\Users\\manana\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\manana\\Desktop\\Desarrollo-de-Interfaces\\Ahorcado\\Ahorcado\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Carlos\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\manana\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -58,7 +58,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

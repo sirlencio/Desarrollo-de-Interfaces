@@ -54,8 +54,24 @@ namespace Ahorcado
             ronda++;
             labelAciertos.Text = "Aciertos: " + aciertos;
             labelErrores.Text = "Errores: " + fallos;
-            labelRondas.Text = "Rondas " + ronda + "/10";
+            if (ronda != 11)
+            {
+                labelRondas.Text = "Rondas " + ronda + "/10";
+            }
 
+            if (ronda == 10)
+            {
+                MessageBox.Show("Esta sera la ultima ronda", "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+            }
+            if (ronda == 11)
+            {
+                MessageBox.Show("Esta era la ultima ronda", "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                user.nombre = Interaction.InputBox("Introduzca el nombre de usuario", "Atencion", "user");
+                user.puntuacion = puntuacion;
+                user.nronda = ronda;
+                this.Close();
+            }
             //Ponemos todos los labels en negro
             foreach (Label labels in panel1.Controls) 
             {
@@ -190,17 +206,6 @@ namespace Ahorcado
         }
         private void juego()
         {
-            if (ronda == 9)
-            {
-                MessageBox.Show("Esta sera la ultima ronda", "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                
-            }else if(ronda == 10){
-                MessageBox.Show("Esta era la ultima ronda", "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                user.nombre = Interaction.InputBox("Introduzca el nombre de usuario", "Atencion", "user");
-                user.puntuacion = puntuacion;
-                user.nronda = ronda;
-                this.Close();
-            }
             //Control fallos
             switch (fallos)
             {
