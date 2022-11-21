@@ -42,23 +42,19 @@ namespace prueba_examen
         {
             int total = 0;
             int cant, precio;
+            int maxcant = 0;
             for(int i = 0; i <dataGridView1.RowCount; i++)
             {
+                if (maxcant < Int32.Parse(dataGridView1.Rows[i].Cells[2].Value.ToString()))
+                {
+                    maxcant = Int32.Parse(dataGridView1.Rows[i].Cells[2].Value.ToString());
+                    textBox2.Text = dataGridView1.Rows[i].Cells[1].Value.ToString();
+                }
                 cant = Int32.Parse(dataGridView1.Rows[i].Cells[2].Value.ToString());
                 precio = Int32.Parse(dataGridView1.Rows[i].Cells[3].Value.ToString());
                 total = total + (cant * precio);
             }
             textBox1.Text = total.ToString();
-            if(dataGridView1.RowCount > 0)
-            {
-                dataGridView1.Sort(dataGridView1.Columns[2], ListSortDirection.Descending);
-                textBox2.Text = dataGridView1.Rows[0].Cells[1].Value.ToString();
-            }
-            else
-            {
-                textBox2.Text = "";
-            }
-            dataGridView1.Sort(dataGridView1.Columns[1], ListSortDirection.Ascending);
         }
 
         private void dataGridView1_CellValueChanged(object sender, DataGridViewCellEventArgs e)

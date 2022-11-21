@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -30,6 +31,8 @@ namespace prueba_examen
 
         private void Form2_Load(object sender, EventArgs e)
         {
+            textBox1.BackColor = SystemColors.Window;
+            textBox2.BackColor = SystemColors.Window;
             if (n == 0)
             {
                 button1.Text = "Añadir";
@@ -47,13 +50,15 @@ namespace prueba_examen
         private void calcSubtotal(object sender, EventArgs e)
         {
             int cant = 0, precio = 0;
-            if(textBox3.Text == "") 
+            if (!Regex.IsMatch(textBox3.Text, @"^[0-9]+$"))
             {
+                textBox3.Text = "";
                 cant = 0;
 
             }
-            else if(textBox4.Text == "") 
+            else if (!Regex.IsMatch(textBox4.Text, @"^[0-9]+$"))
             {
+                textBox4.Text = "";
                 precio = 0;
             }
             else
@@ -66,7 +71,7 @@ namespace prueba_examen
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            if(textBox1.Text != "")
+            if (textBox1.Text != "")
             {
                 comprobarDatosPrueba(textBox1.Text);
             }
@@ -78,23 +83,30 @@ namespace prueba_examen
                 case ("1"):
                     textBox2.Text = "Tornillo";
                     textBox4.Text = "3";
+                    textBox1.BackColor = SystemColors.Window;
+                    textBox2.BackColor = SystemColors.Window;
                     break;
                 case ("2"):
                     textBox2.Text = "Tuerca";
-                    textBox4.Text = "3";
+                    textBox4.Text = "2";
+                    textBox1.BackColor = SystemColors.Window;
+                    textBox2.BackColor = SystemColors.Window;
                     break;
                 case ("3"):
                     textBox2.Text = "Arandela";
-                    textBox4.Text = "3";
+                    textBox4.Text = "1";
+                    textBox1.BackColor = SystemColors.Window;
+                    textBox2.BackColor = SystemColors.Window;
                     break;
                 case ("4"):
                     textBox2.Text = "Llave";
-                    textBox4.Text = "3";
+                    textBox4.Text = "4";
+                    textBox1.BackColor = SystemColors.Window;
+                    textBox2.BackColor = SystemColors.Window;
                     break;
                 default:
+                    textBox1.BackColor = Color.Red;
                     textBox2.BackColor = Color.Red;
-                    textBox3.BackColor = Color.Red;
-                    textBox4.BackColor = Color.Red;
                     break;
             }
         }
