@@ -8,19 +8,19 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\manana\\.nuget\\packages\\": {}
+    "C:\\Users\\Carlos\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\manana\\source\\repos\\aplication\\aplication\\aplication.csproj",
+      "projectUniqueName": "C:\\Users\\Carlos\\Desktop\\Desarrollo-de-Interfaces\\aplication\\aplication\\aplication.csproj",
       "projectName": "aplication",
-      "projectPath": "C:\\Users\\manana\\source\\repos\\aplication\\aplication\\aplication.csproj",
-      "packagesPath": "C:\\Users\\manana\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\manana\\source\\repos\\aplication\\aplication\\obj\\",
+      "projectPath": "C:\\Users\\Carlos\\Desktop\\Desarrollo-de-Interfaces\\aplication\\aplication\\aplication.csproj",
+      "packagesPath": "C:\\Users\\Carlos\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Carlos\\Desktop\\Desarrollo-de-Interfaces\\aplication\\aplication\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\manana\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Carlos\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -64,7 +64,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

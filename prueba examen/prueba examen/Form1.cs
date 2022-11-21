@@ -72,5 +72,28 @@ namespace prueba_examen
             actualizar();
         }
 
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+            string filtro = textBox3.Text.ToLower();
+            for (int i = 0; i < dataGridView1.RowCount; i++)
+            {
+                if (filtro.Length != 0)
+                {
+                    string nombre = dataGridView1.Rows[i].Cells[1].Value.ToString();
+                    if (nombre.ToLower().Contains(filtro))
+                    {
+                        dataGridView1.Rows[i].Visible = true;
+                    }
+                    else
+                    {
+                        dataGridView1.Rows[i].Visible = false;
+                    }
+                }
+                else
+                {
+                    dataGridView1.Rows[i].Visible = true;
+                }
+            }
+        }
     }
 }
