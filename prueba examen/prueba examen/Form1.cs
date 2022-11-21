@@ -49,7 +49,16 @@ namespace prueba_examen
                 total = total + (cant * precio);
             }
             textBox1.Text = total.ToString();
-            
+            if(dataGridView1.RowCount > 0)
+            {
+                dataGridView1.Sort(dataGridView1.Columns[2], ListSortDirection.Descending);
+                textBox2.Text = dataGridView1.Rows[0].Cells[1].Value.ToString();
+            }
+            else
+            {
+                textBox2.Text = "";
+            }
+            dataGridView1.Sort(dataGridView1.Columns[1], ListSortDirection.Ascending);
         }
 
         private void dataGridView1_CellValueChanged(object sender, DataGridViewCellEventArgs e)
@@ -66,5 +75,6 @@ namespace prueba_examen
         {
             actualizar();
         }
+
     }
 }

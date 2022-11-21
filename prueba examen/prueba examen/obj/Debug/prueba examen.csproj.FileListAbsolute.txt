@@ -10,3 +10,15 @@ C:\Users\Carlos\source\repos\prueba examen\prueba examen\obj\Debug\prueba examen
 C:\Users\Carlos\source\repos\prueba examen\prueba examen\obj\Debug\prueba examen.csproj.CoreCompileInputs.cache
 C:\Users\Carlos\source\repos\prueba examen\prueba examen\obj\Debug\prueba examen.exe
 C:\Users\Carlos\source\repos\prueba examen\prueba examen\obj\Debug\prueba examen.pdb
+C:\Users\manana\Desktop\Desarrollo-de-Interfaces\prueba examen\prueba examen\bin\Debug\prueba examen.exe.config
+C:\Users\manana\Desktop\Desarrollo-de-Interfaces\prueba examen\prueba examen\bin\Debug\prueba examen.exe
+C:\Users\manana\Desktop\Desarrollo-de-Interfaces\prueba examen\prueba examen\bin\Debug\prueba examen.pdb
+C:\Users\manana\Desktop\Desarrollo-de-Interfaces\prueba examen\prueba examen\obj\Debug\prueba examen.csproj.AssemblyReference.cache
+C:\Users\manana\Desktop\Desarrollo-de-Interfaces\prueba examen\prueba examen\obj\Debug\prueba examen.csproj.SuggestedBindingRedirects.cache
+C:\Users\manana\Desktop\Desarrollo-de-Interfaces\prueba examen\prueba examen\obj\Debug\prueba_examen.Form1.resources
+C:\Users\manana\Desktop\Desarrollo-de-Interfaces\prueba examen\prueba examen\obj\Debug\prueba_examen.Form2.resources
+C:\Users\manana\Desktop\Desarrollo-de-Interfaces\prueba examen\prueba examen\obj\Debug\prueba_examen.Properties.Resources.resources
+C:\Users\manana\Desktop\Desarrollo-de-Interfaces\prueba examen\prueba examen\obj\Debug\prueba examen.csproj.GenerateResource.cache
+C:\Users\manana\Desktop\Desarrollo-de-Interfaces\prueba examen\prueba examen\obj\Debug\prueba examen.csproj.CoreCompileInputs.cache
+C:\Users\manana\Desktop\Desarrollo-de-Interfaces\prueba examen\prueba examen\obj\Debug\prueba examen.exe
+C:\Users\manana\Desktop\Desarrollo-de-Interfaces\prueba examen\prueba examen\obj\Debug\prueba examen.pdb

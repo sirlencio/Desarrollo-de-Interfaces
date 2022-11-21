@@ -44,6 +44,61 @@ namespace prueba_examen
             }
         }
 
+        private void calcSubtotal(object sender, EventArgs e)
+        {
+            int cant = 0, precio = 0;
+            if(textBox3.Text == "") 
+            {
+                cant = 0;
+
+            }
+            else if(textBox4.Text == "") 
+            {
+                precio = 0;
+            }
+            else
+            {
+                cant = Int32.Parse(textBox3.Text);
+                precio = Int32.Parse(textBox4.Text);
+            }
+            textBox5.Text = (cant * precio) + "";
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            if(textBox1.Text != "")
+            {
+                comprobarDatosPrueba(textBox1.Text);
+            }
+        }
+        private void comprobarDatosPrueba(string id)
+        {
+            switch (id)
+            {
+                case ("1"):
+                    textBox2.Text = "Tornillo";
+                    textBox4.Text = "3";
+                    break;
+                case ("2"):
+                    textBox2.Text = "Tuerca";
+                    textBox4.Text = "3";
+                    break;
+                case ("3"):
+                    textBox2.Text = "Arandela";
+                    textBox4.Text = "3";
+                    break;
+                case ("4"):
+                    textBox2.Text = "Llave";
+                    textBox4.Text = "3";
+                    break;
+                default:
+                    textBox2.BackColor = Color.Red;
+                    textBox3.BackColor = Color.Red;
+                    textBox4.BackColor = Color.Red;
+                    break;
+            }
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             if (n == 0)
