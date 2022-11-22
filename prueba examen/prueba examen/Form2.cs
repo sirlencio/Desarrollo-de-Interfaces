@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -14,7 +15,7 @@ namespace prueba_examen
     public partial class Form2 : Form
     {
         DataGridView dg;
-        int n, index;
+        int n, index, cant, precio;
         public Form2(DataGridView dg, int n)
         {
             InitializeComponent();
@@ -49,7 +50,6 @@ namespace prueba_examen
 
         private void calcSubtotal(object sender, EventArgs e)
         {
-            int cant = 0, precio = 0;
             if (!Regex.IsMatch(textBox3.Text, @"^[0-9]+$"))
             {
                 textBox3.Text = "";
@@ -113,19 +113,34 @@ namespace prueba_examen
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (n == 0)
+            if(cant != 0 && precio != 0)
             {
-                dg.Rows.Add(textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text);
-                Close();
+                if (n == 0)
+                {
+                    dg.Rows.Add(textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text);
+                    Close();
+                }
+                else
+                {
+                    dg.Rows[index].Cells[0].Value = textBox1.Text;
+                    dg.Rows[index].Cells[1].Value = textBox2.Text;
+                    dg.Rows[index].Cells[2].Value = textBox3.Text;
+                    dg.Rows[index].Cells[3].Value = textBox4.Text;
+                    Close();
+                }
             }
             else
             {
-                dg.Rows[index].Cells[0].Value = textBox1.Text;
-                dg.Rows[index].Cells[1].Value = textBox2.Text;
-                dg.Rows[index].Cells[2].Value = textBox3.Text;
-                dg.Rows[index].Cells[3].Value = textBox4.Text;
-                Close();
+                if(cant == 0)
+                {
+                    MessageBox.Show("No puede introducir 0 como cantidad", "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                }
+                else
+                {
+                    MessageBox.Show("No puede introducir 0 como precio", "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                }
             }
+            
         }
     }
 }

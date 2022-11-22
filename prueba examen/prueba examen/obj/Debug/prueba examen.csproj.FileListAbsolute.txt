@@ -35,3 +35,4 @@ C:\Users\Carlos\Desktop\Desarrollo-de-Interfaces\prueba examen\prueba examen\obj
 C:\Users\Carlos\Desktop\Desarrollo-de-Interfaces\prueba examen\prueba examen\obj\Debug\prueba examen.csproj.CoreCompileInputs.cache
 C:\Users\Carlos\Desktop\Desarrollo-de-Interfaces\prueba examen\prueba examen\obj\Debug\prueba examen.exe
 C:\Users\Carlos\Desktop\Desarrollo-de-Interfaces\prueba examen\prueba examen\obj\Debug\prueba examen.pdb
+C:\Users\manana\Desktop\Desarrollo-de-Interfaces\prueba examen\prueba examen\obj\Debug\prueba_examen.Form3.resources
