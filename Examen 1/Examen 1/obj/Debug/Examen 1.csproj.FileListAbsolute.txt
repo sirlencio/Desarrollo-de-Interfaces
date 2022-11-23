@@ -1,0 +1,15 @@
+C:\Users\manana\source\repos\Examen 1\Examen 1\bin\Debug\Examen 1.exe.config
+C:\Users\manana\source\repos\Examen 1\Examen 1\bin\Debug\Examen 1.exe
+C:\Users\manana\source\repos\Examen 1\Examen 1\bin\Debug\Examen 1.pdb
+C:\Users\manana\source\repos\Examen 1\Examen 1\obj\Debug\Examen 1.csproj.AssemblyReference.cache
+C:\Users\manana\source\repos\Examen 1\Examen 1\obj\Debug\Examen 1.csproj.SuggestedBindingRedirects.cache
+C:\Users\manana\source\repos\Examen 1\Examen 1\obj\Debug\Examen_1.Form1.resources
+C:\Users\manana\source\repos\Examen 1\Examen 1\obj\Debug\Examen_1.Form2.resources
+C:\Users\manana\source\repos\Examen 1\Examen 1\obj\Debug\Examen_1.Properties.Resources.resources
+C:\Users\manana\source\repos\Examen 1\Examen 1\obj\Debug\Examen 1.csproj.GenerateResource.cache
+C:\Users\manana\source\repos\Examen 1\Examen 1\obj\Debug\Examen 1.csproj.CoreCompileInputs.cache
+C:\Users\manana\source\repos\Examen 1\Examen 1\obj\Debug\Examen 1.exe
+C:\Users\manana\source\repos\Examen 1\Examen 1\obj\Debug\Examen 1.pdb
+C:\Users\manana\source\repos\Examen 1\Examen 1\obj\Debug\Examen_1.Form3.resources
+C:\Users\manana\source\repos\Examen 1\Examen 1\obj\Debug\Examen_1.Form4.resources
+C:\Users\manana\source\repos\Examen 1\Examen 1\obj\Debug\Examen_1.Form5.resources
