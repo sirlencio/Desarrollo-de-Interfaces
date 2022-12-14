@@ -51,3 +51,4 @@ C:\Users\Carlos\Desktop\Desarrollo-de-Interfaces\pruebaBBDD\prueba\obj\Debug\pru
 C:\Users\Carlos\Desktop\Desarrollo-de-Interfaces\pruebaBBDD\prueba\obj\Debug\prueba.exe
 C:\Users\Carlos\Desktop\Desarrollo-de-Interfaces\pruebaBBDD\prueba\obj\Debug\prueba.pdb
 C:\Users\Carlos\Desktop\Desarrollo-de-Interfaces\pruebaBBDD\prueba\obj\Debug\prueba.Form3.resources
+C:\Users\Carlos\Desktop\Desarrollo-de-Interfaces\pruebaBBDD\prueba\obj\Debug\prueba.Form4.resources
