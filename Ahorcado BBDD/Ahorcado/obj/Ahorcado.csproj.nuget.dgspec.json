@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\manana\\Desktop\\Ahorcado BBDD\\Ahorcado\\Ahorcado.csproj": {}
+    "C:\\Users\\Carlos\\Desktop\\Desarrollo-de-Interfaces\\Ahorcado BBDD\\Ahorcado\\Ahorcado.csproj": {}
   },
   "projects": {
-    "C:\\Users\\manana\\Desktop\\Ahorcado BBDD\\Ahorcado\\Ahorcado.csproj": {
+    "C:\\Users\\Carlos\\Desktop\\Desarrollo-de-Interfaces\\Ahorcado BBDD\\Ahorcado\\Ahorcado.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\manana\\Desktop\\Ahorcado BBDD\\Ahorcado\\Ahorcado.csproj",
+        "projectUniqueName": "C:\\Users\\Carlos\\Desktop\\Desarrollo-de-Interfaces\\Ahorcado BBDD\\Ahorcado\\Ahorcado.csproj",
         "projectName": "Ahorcado",
-        "projectPath": "C:\\Users\\manana\\Desktop\\Ahorcado BBDD\\Ahorcado\\Ahorcado.csproj",
-        "packagesPath": "C:\\Users\\manana\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\manana\\Desktop\\Ahorcado BBDD\\Ahorcado\\obj\\",
+        "projectPath": "C:\\Users\\Carlos\\Desktop\\Desarrollo-de-Interfaces\\Ahorcado BBDD\\Ahorcado\\Ahorcado.csproj",
+        "packagesPath": "C:\\Users\\Carlos\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Carlos\\Desktop\\Desarrollo-de-Interfaces\\Ahorcado BBDD\\Ahorcado\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\manana\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Carlos\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,6 +39,12 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "MySqlConnector": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -57,7 +63,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.414\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.415\\RuntimeIdentifierGraph.json"
         }
       }
     }

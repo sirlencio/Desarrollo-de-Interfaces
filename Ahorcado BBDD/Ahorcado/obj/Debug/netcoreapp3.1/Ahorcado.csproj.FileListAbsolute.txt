@@ -17,3 +17,29 @@ C:\Users\manana\Desktop\Ahorcado\Ahorcado\bin\Debug\netcoreapp3.1\Ahorcado.pdb
 C:\Users\manana\Desktop\Ahorcado\Ahorcado\obj\Debug\netcoreapp3.1\Ahorcado.dll
 C:\Users\manana\Desktop\Ahorcado\Ahorcado\obj\Debug\netcoreapp3.1\Ahorcado.pdb
 C:\Users\manana\Desktop\Ahorcado\Ahorcado\obj\Debug\netcoreapp3.1\Ahorcado.genruntimeconfig.cache
+C:\Users\Carlos\Desktop\Desarrollo-de-Interfaces\Ahorcado BBDD\Ahorcado\obj\Debug\netcoreapp3.1\Ahorcado.csproj.AssemblyReference.cache
+C:\Users\Carlos\Desktop\Desarrollo-de-Interfaces\Ahorcado BBDD\Ahorcado\obj\Debug\netcoreapp3.1\Ahorcado.Form1.resources
+C:\Users\Carlos\Desktop\Desarrollo-de-Interfaces\Ahorcado BBDD\Ahorcado\obj\Debug\netcoreapp3.1\Ahorcado.Form2.resources
+C:\Users\Carlos\Desktop\Desarrollo-de-Interfaces\Ahorcado BBDD\Ahorcado\obj\Debug\netcoreapp3.1\Ahorcado.Form3.resources
+C:\Users\Carlos\Desktop\Desarrollo-de-Interfaces\Ahorcado BBDD\Ahorcado\obj\Debug\netcoreapp3.1\Ahorcado.Properties.Resources.resources
+C:\Users\Carlos\Desktop\Desarrollo-de-Interfaces\Ahorcado BBDD\Ahorcado\obj\Debug\netcoreapp3.1\Ahorcado.csproj.GenerateResource.cache
+C:\Users\Carlos\Desktop\Desarrollo-de-Interfaces\Ahorcado BBDD\Ahorcado\obj\Debug\netcoreapp3.1\Ahorcado.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Carlos\Desktop\Desarrollo-de-Interfaces\Ahorcado BBDD\Ahorcado\obj\Debug\netcoreapp3.1\Ahorcado.AssemblyInfoInputs.cache
+C:\Users\Carlos\Desktop\Desarrollo-de-Interfaces\Ahorcado BBDD\Ahorcado\obj\Debug\netcoreapp3.1\Ahorcado.AssemblyInfo.cs
+C:\Users\Carlos\Desktop\Desarrollo-de-Interfaces\Ahorcado BBDD\Ahorcado\obj\Debug\netcoreapp3.1\Ahorcado.csproj.CoreCompileInputs.cache
+C:\Users\Carlos\Desktop\Desarrollo-de-Interfaces\Ahorcado BBDD\Ahorcado\obj\Debug\netcoreapp3.1\Ahorcado.dll
+C:\Users\Carlos\Desktop\Desarrollo-de-Interfaces\Ahorcado BBDD\Ahorcado\obj\Debug\netcoreapp3.1\Ahorcado.pdb
+C:\Users\Carlos\Desktop\Desarrollo-de-Interfaces\Ahorcado BBDD\Ahorcado\bin\Debug\netcoreapp3.1\Ahorcado.exe
+C:\Users\Carlos\Desktop\Desarrollo-de-Interfaces\Ahorcado BBDD\Ahorcado\bin\Debug\netcoreapp3.1\Ahorcado.deps.json
+C:\Users\Carlos\Desktop\Desarrollo-de-Interfaces\Ahorcado BBDD\Ahorcado\bin\Debug\netcoreapp3.1\Ahorcado.runtimeconfig.json
+C:\Users\Carlos\Desktop\Desarrollo-de-Interfaces\Ahorcado BBDD\Ahorcado\bin\Debug\netcoreapp3.1\Ahorcado.runtimeconfig.dev.json
+C:\Users\Carlos\Desktop\Desarrollo-de-Interfaces\Ahorcado BBDD\Ahorcado\bin\Debug\netcoreapp3.1\Ahorcado.dll
+C:\Users\Carlos\Desktop\Desarrollo-de-Interfaces\Ahorcado BBDD\Ahorcado\bin\Debug\netcoreapp3.1\Ahorcado.pdb
+C:\Users\Carlos\Desktop\Desarrollo-de-Interfaces\Ahorcado BBDD\Ahorcado\bin\Debug\netcoreapp3.1\MySqlConnector.dll
+C:\Users\Carlos\Desktop\Desarrollo-de-Interfaces\Ahorcado BBDD\Ahorcado\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Carlos\Desktop\Desarrollo-de-Interfaces\Ahorcado BBDD\Ahorcado\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Carlos\Desktop\Desarrollo-de-Interfaces\Ahorcado BBDD\Ahorcado\obj\Debug\netcoreapp3.1\Ahorcado.csproj.CopyComplete
+C:\Users\Carlos\Desktop\Desarrollo-de-Interfaces\Ahorcado BBDD\Ahorcado\obj\Debug\netcoreapp3.1\Ahorcado.genruntimeconfig.cache
+C:\Users\Carlos\Desktop\Desarrollo-de-Interfaces\Ahorcado BBDD\Ahorcado\obj\Debug\netcoreapp3.1\Ahorcado.Form4.resources
+C:\Users\Carlos\Desktop\Desarrollo-de-Interfaces\Ahorcado BBDD\Ahorcado\obj\Debug\netcoreapp3.1\Ahorcado.Form5.resources
+C:\Users\Carlos\Desktop\Desarrollo-de-Interfaces\Ahorcado BBDD\Ahorcado\obj\Debug\netcoreapp3.1\Ahorcado.Form6.resources

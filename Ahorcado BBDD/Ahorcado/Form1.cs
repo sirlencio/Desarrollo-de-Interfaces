@@ -1,3 +1,4 @@
+using MySqlConnector;
 using System;
 using System.Collections;
 using System.ComponentModel;
@@ -8,77 +9,117 @@ namespace Ahorcado
 {
     public partial class Form1 : Form
     {
-        XmlDocument doc = new XmlDocument();
-        string[] baraja;
-        usuario user;
-        ArrayList array = new ArrayList();
+        MySqlConnection sql = new MySqlConnection("server=localhost;user id=root;database=ahorcado;password=admin");
+        usuario user = new usuario();
         public Form1()
         {
             InitializeComponent();
         }
-        private void Form1_Load(object sender, EventArgs e)
+        private Boolean comprobar()
         {
-            doc.Load("../../../../base.xml");
-            foreach (XmlNode node in doc.DocumentElement.ChildNodes)
+            sql.Open();
+            MySqlCommand comando = new MySqlCommand("Select id, super from usuarios where nombre like '" + user.Nombre + "' and pwd like '" + user.Pwd + "'", sql);
+            MySqlDataReader reader = comando.ExecuteReader();
+            reader.Read();
+            if (!reader.HasRows)
             {
-                string text = node.LocalName;
-                comboBox1.Items.Add(text);
-            }
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            if (comboBox1.Text != "")
-            {
-                user = new usuario();
-                Form2 form2 = new Form2(baraja, comboBox1.Text, user);
-                form2.ShowDialog();
-                array.Add(user);
+                sql.Close();
+                return false;
             }
             else
             {
-                MessageBox.Show("Seleccione una categoria", "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                label4.Visible = false;
+                user.Id = reader.GetInt32(0);
+                user.Super = reader.GetBoolean(1);
+                sql.Close();
+                return true;
+            }
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            user.Nombre = textBox1.Text;
+            user.Pwd = textBox2.Text;
+            if (comprobar())
+            {
+                Form2 menu = new Form2(user);
+                menu.ShowDialog();
+            }
+            else
+            {
+                label4.Text = "La informacion no coincide";
+                label4.Visible = true;
+                System.Media.SystemSounds.Exclamation.Play();
             }
 
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            if(textBox1.Text == "")
+            {
+                label4.Text = "El nombre de usuario no puede estar vacio";
+                System.Media.SystemSounds.Exclamation.Play();
+            }
+            else
+            {
+                user.Nombre = textBox1.Text;
+                user.Pwd = textBox2.Text;
+
+                sql.Open();
+                MySqlCommand cmduser = new MySqlCommand("Select * from usuarios where nombre like '" + user.Nombre + "'", sql);
+                MySqlDataReader reader = cmduser.ExecuteReader();
+                reader.Read();
+                if (!reader.HasRows && !user.Nombre.Equals("Invitado"))
+                {
+                    sql.Close();
+                    sql.Open();
+                    MySqlCommand cmdinsert = new MySqlCommand("insert into usuarios values ("+ 0 + ",'" + user.Nombre + "','" + user.Pwd + "'," + "false" + ")", sql);
+                    cmdinsert.ExecuteNonQuery();
+                    sql.Close();
+                    Form2 menu = new Form2(user);
+                    menu.ShowDialog();
+                }
+                else
+                {
+                    label4.Text = "El usuario ya existe";
+                    label4.Visible = true;
+                    System.Media.SystemSounds.Exclamation.Play();
+                }
+                sql.Close();
+            }           
+        }
+
+        private void escribir(object sender, EventArgs e)
+        {
+            label4.Text = "";
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
             this.Close();
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e)
         {
-            String nombrenodo = comboBox1.Text;
-            XmlNode node = doc.DocumentElement.SelectSingleNode("//" + nombrenodo);
-            int cont = 0;
-            foreach (XmlNode node1 in node)
-            {
-                cont++;
-            }
-            baraja = new string[cont];
-            cont = 0;
-            foreach (XmlNode node1 in node)
-            {
-                String text = node1.InnerText;
-                baraja[cont] = text;
-                cont++;
-            }
+            user.Nombre = "Invitado";
+            user.Pwd = "";
+            Form2 menu = new Form2(user);
+            menu.ShowDialog();
         }
-        private void button3_Click(object sender, EventArgs e)
-        {
-            Form3 form = new Form3(array);
-            form.ShowDialog();
-        }
-    }
-    public class usuario
-    {
-        public string nombre = "user";
-        public int puntuacion = 0;
-        public int nronda = 0;
 
-        public usuario()
+        private void label5_Click(object sender, EventArgs e)
         {
+            if (textBox2.UseSystemPasswordChar == false)
+            {
+                textBox2.UseSystemPasswordChar = true;
+                label5.Text = "\uD83D\uDD12";
+            }
+            else
+            {
+                textBox2.UseSystemPasswordChar = false;
+                label5.Text = "\uD83D\uDD13";
+            }
         }
     }
 }
