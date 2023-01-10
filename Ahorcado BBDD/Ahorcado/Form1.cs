@@ -34,8 +34,7 @@ namespace Ahorcado
                 return true;
             }
         }
-
-        private void button1_Click_1(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             user.Nombre = textBox1.Text;
             user.Pwd = textBox2.Text;
@@ -50,14 +49,14 @@ namespace Ahorcado
                 label4.Visible = true;
                 System.Media.SystemSounds.Exclamation.Play();
             }
-
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if(textBox1.Text == "")
+            if (textBox1.Text == "")
             {
                 label4.Text = "El nombre de usuario no puede estar vacio";
+                label4.Visible = true;
                 System.Media.SystemSounds.Exclamation.Play();
             }
             else
@@ -86,7 +85,7 @@ namespace Ahorcado
                     System.Media.SystemSounds.Exclamation.Play();
                 }
                 sql.Close();
-            }           
+            }
         }
 
         private void escribir(object sender, EventArgs e)

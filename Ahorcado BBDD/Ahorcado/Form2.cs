@@ -32,6 +32,7 @@ namespace Ahorcado
             {
                 button2.Enabled = false;
                 button3.Enabled = false;
+                button5.Enabled = false;
             }
             else
             {

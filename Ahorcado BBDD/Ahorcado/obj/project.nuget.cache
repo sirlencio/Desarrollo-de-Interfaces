@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "CuwSQ0b3yQTwfRCobDUA5XBzNmtxPeRDs9klmmym8wR5N1QPpM8sMu9C/YP79oRoewdlr51erpi4erck3Q7upw==",
+  "dgSpecHash": "n66CsInGlQn9eRk/LZe1Eh49lYE6B+ZTwHLZSv9TTZ/bvruRzUVEv05xqhQKR7/96NezgY/91nKkMoYDHROG8Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Carlos\\Desktop\\Desarrollo-de-Interfaces\\Ahorcado BBDD\\Ahorcado\\Ahorcado.csproj",
+  "projectFilePath": "C:\\Users\\manana\\Desktop\\Desarrollo-de-Interfaces\\Ahorcado BBDD\\Ahorcado\\Ahorcado.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Carlos\\.nuget\\packages\\mysqlconnector\\2.2.5\\mysqlconnector.2.2.5.nupkg.sha512",
-    "C:\\Users\\Carlos\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
-    "C:\\Users\\Carlos\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
-    "C:\\Users\\Carlos\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+    "C:\\Users\\manana\\.nuget\\packages\\mysqlconnector\\2.2.5\\mysqlconnector.2.2.5.nupkg.sha512",
+    "C:\\Users\\manana\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
+    "C:\\Users\\manana\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\manana\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }

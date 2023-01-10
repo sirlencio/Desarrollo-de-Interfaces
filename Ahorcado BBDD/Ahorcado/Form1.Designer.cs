@@ -153,7 +153,7 @@ namespace Ahorcado
             this.button1.TabIndex = 12;
             this.button1.Text = "Entrar";
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label4
             // 
@@ -202,7 +202,7 @@ namespace Ahorcado
             this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label5.Location = new System.Drawing.Point(472, 286);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(32, 21);
+            this.label5.Size = new System.Drawing.Size(26, 21);
             this.label5.TabIndex = 16;
             this.label5.Text = "🔒";
             this.label5.Click += new System.EventHandler(this.label5_Click);

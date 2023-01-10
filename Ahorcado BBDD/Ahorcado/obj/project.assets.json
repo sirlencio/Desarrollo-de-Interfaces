@@ -161,19 +161,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Carlos\\.nuget\\packages\\": {}
+    "C:\\Users\\manana\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Carlos\\Desktop\\Desarrollo-de-Interfaces\\Ahorcado BBDD\\Ahorcado\\Ahorcado.csproj",
+      "projectUniqueName": "C:\\Users\\manana\\Desktop\\Desarrollo-de-Interfaces\\Ahorcado BBDD\\Ahorcado\\Ahorcado.csproj",
       "projectName": "Ahorcado",
-      "projectPath": "C:\\Users\\Carlos\\Desktop\\Desarrollo-de-Interfaces\\Ahorcado BBDD\\Ahorcado\\Ahorcado.csproj",
-      "packagesPath": "C:\\Users\\Carlos\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Carlos\\Desktop\\Desarrollo-de-Interfaces\\Ahorcado BBDD\\Ahorcado\\obj\\",
+      "projectPath": "C:\\Users\\manana\\Desktop\\Desarrollo-de-Interfaces\\Ahorcado BBDD\\Ahorcado\\Ahorcado.csproj",
+      "packagesPath": "C:\\Users\\manana\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\manana\\Desktop\\Desarrollo-de-Interfaces\\Ahorcado BBDD\\Ahorcado\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Carlos\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\manana\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

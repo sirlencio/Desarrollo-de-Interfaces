@@ -35,15 +35,14 @@ namespace Ahorcado
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
+            this.buttonAceptar = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.button6 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,10 +52,11 @@ namespace Ahorcado
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AllowUserToResizeColumns = false;
             this.dataGridView1.AllowUserToResizeRows = false;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(418, 136);
-            this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(121, 494);
@@ -86,39 +86,28 @@ namespace Ahorcado
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(40, 61);
+            this.button1.Location = new System.Drawing.Point(44, 61);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(98, 58);
             this.button1.TabIndex = 3;
-            this.button1.Text = "Insertar categoria";
+            this.button1.Text = "Insertar";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button3.Location = new System.Drawing.Point(40, 446);
+            this.button3.Location = new System.Drawing.Point(149, 425);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(98, 58);
+            this.button3.Size = new System.Drawing.Size(79, 58);
             this.button3.TabIndex = 5;
-            this.button3.Text = "Eliminar categoria";
+            this.button3.Text = "Eliminar";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button4
-            // 
-            this.button4.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button4.Location = new System.Drawing.Point(233, 446);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(98, 58);
-            this.button4.TabIndex = 6;
-            this.button4.Text = "Eliminar palabra";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(118, 215);
+            this.textBox1.Location = new System.Drawing.Point(122, 187);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(144, 23);
             this.textBox1.TabIndex = 7;
@@ -126,56 +115,45 @@ namespace Ahorcado
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(118, 292);
+            this.textBox2.Location = new System.Drawing.Point(122, 264);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(144, 23);
             this.textBox2.TabIndex = 8;
             this.textBox2.Visible = false;
             // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button2.Location = new System.Drawing.Point(233, 61);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(98, 58);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Insertar palabra";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(118, 195);
+            this.label2.Location = new System.Drawing.Point(122, 167);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(102, 17);
+            this.label2.Size = new System.Drawing.Size(65, 17);
             this.label2.TabIndex = 11;
-            this.label2.Text = "Nueva categoria:";
+            this.label2.Text = "Categoria:";
             this.label2.Visible = false;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(118, 272);
+            this.label3.Location = new System.Drawing.Point(122, 244);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(90, 17);
+            this.label3.Size = new System.Drawing.Size(52, 17);
             this.label3.TabIndex = 12;
-            this.label3.Text = "Nueva palabra:";
+            this.label3.Text = "Palabra:";
             this.label3.Visible = false;
             // 
-            // button5
+            // buttonAceptar
             // 
-            this.button5.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button5.Location = new System.Drawing.Point(141, 353);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(79, 32);
-            this.button5.TabIndex = 13;
-            this.button5.Text = "Aceptar";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Visible = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.buttonAceptar.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonAceptar.Location = new System.Drawing.Point(149, 325);
+            this.buttonAceptar.Name = "buttonAceptar";
+            this.buttonAceptar.Size = new System.Drawing.Size(79, 32);
+            this.buttonAceptar.TabIndex = 13;
+            this.buttonAceptar.Text = "Aceptar";
+            this.buttonAceptar.UseVisualStyleBackColor = true;
+            this.buttonAceptar.Visible = false;
+            this.buttonAceptar.Click += new System.EventHandler(this.buttonAceptar_Click);
             // 
             // label4
             // 
@@ -188,31 +166,41 @@ namespace Ahorcado
             this.label4.Text = "Para insertar una categoria debe insertar una palabra";
             this.label4.Visible = false;
             // 
-            // button6
+            // button4
             // 
-            this.button6.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button6.Location = new System.Drawing.Point(129, 551);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(106, 58);
-            this.button6.TabIndex = 16;
-            this.button6.Text = "Salir";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.button4.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button4.Location = new System.Drawing.Point(149, 559);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(79, 58);
+            this.button4.TabIndex = 16;
+            this.button4.Text = "Salir";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button2.Location = new System.Drawing.Point(243, 61);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(98, 58);
+            this.button2.TabIndex = 17;
+            this.button2.Text = "Modificar";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Form6
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(612, 671);
-            this.Controls.Add(this.button6);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.buttonAceptar);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
@@ -235,14 +223,13 @@ namespace Ahorcado
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button buttonAceptar;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button2;
     }
 }

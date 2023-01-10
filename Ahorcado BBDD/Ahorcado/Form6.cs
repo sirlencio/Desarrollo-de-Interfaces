@@ -23,6 +23,8 @@ namespace Ahorcado
 
         private void cargaCombo()
         {
+            comboBox1.Items.Clear();
+            comboBox1.Items.Add(""); // Item para añadir categoria
             sql.Open();
             MySqlCommand comando = new MySqlCommand("Select distinct categoria from biblioteca", sql);
             MySqlDataReader reader = comando.ExecuteReader();
@@ -56,60 +58,53 @@ namespace Ahorcado
             label3.Visible = true;
             textBox2.Visible = true;
 
-            button5.Visible = true;
+            buttonAceptar.Visible = true;
 
             label4.Visible = true;
+
+            if (comboBox1.Text == "") //Si inserta y no hay categoria seleccionada es para una categoria nueva
+            {
+                textBox1.Text = "";
+            }
+            else
+            {
+                textBox1.Text = comboBox1.Text;
+            }
 
             button1.Enabled = false;
             button2.Enabled = false;
             button3.Enabled = false;
-            button4.Enabled = false;
+
             comboBox1.Enabled = false;
-            opc = 0;
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            textBox1.Text = comboBox1.Text;
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                textBox2.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+            }
+
             label3.Visible = true;
             textBox2.Visible = true;
 
-            button5.Visible = true;
+            buttonAceptar.Visible = true;
 
             label4.Visible = false;
 
             button1.Enabled = false;
             button2.Enabled = false;
             button3.Enabled = false;
-            button4.Enabled = false;
             comboBox1.Enabled = false;
-            opc = 1;
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             DialogResult dr = MessageBox.Show("Esta seguro", "Atencion", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
-            if(dr == DialogResult.Yes)
+            if (dr == DialogResult.Yes)
             {
-                if (comboBox1.Text != "")
-                {
-                    sql.Open();
-                    MySqlCommand cmddelete = new MySqlCommand("delete from biblioteca where categoria like '" + comboBox1.Text + "'", sql);
-                    cmddelete.ExecuteNonQuery();
-                    sql.Close();
-                }
-                else
-                {
-                    System.Media.SystemSounds.Exclamation.Play();
-                }
-            }
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            DialogResult dr = MessageBox.Show("Esta seguro", "Atencion", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
-            if(dr == DialogResult.Yes)
-            {
-                if (dataGridView1.SelectedRows.Count > 0)
+                if (dataGridView1.SelectedRows.Count == 1) //Borrar una palabra
                 {
                     string palabra = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
                     sql.Open();
@@ -117,53 +112,52 @@ namespace Ahorcado
                     cmddelete.ExecuteNonQuery();
                     sql.Close();
                 }
-                else
+                else if (dataGridView1.SelectedRows.Count > 1) // Para multiselect
                 {
-                    System.Media.SystemSounds.Exclamation.Play();
+                    for (int i = 0; i < dataGridView1.SelectedRows.Count; i++)
+                    {
+                        string palabra = dataGridView1.SelectedRows[i].Cells[0].Value.ToString();
+                        sql.Open();
+                        MySqlCommand cmddelete = new MySqlCommand("delete from biblioteca where categoria like '" + comboBox1.Text + "' and palabra like '" + palabra + "'", sql);
+                        cmddelete.ExecuteNonQuery();
+                        sql.Close();
+                    }
                 }
+                else if (dataGridView1.SelectedRows.Count == 0) //Borra categoria si no hay palabras seleccionadas
+                {
+                    sql.Open();
+                    MySqlCommand cmddelete = new MySqlCommand("delete from biblioteca where categoria like '" + comboBox1.Text + "'", sql);
+                    cmddelete.ExecuteNonQuery();
+                    sql.Close();
+                }
+                cargaCombo();
                 cargaTabla();
-            }            
+            }
         }
-
-        private void button5_Click(object sender, EventArgs e)
+        private void buttonAceptar_Click(object sender, EventArgs e)
         {
-            textBox1.Visible = false;
-            label2.Visible = false;
+            sql.Open();
+            MySqlCommand cmdinsert = new MySqlCommand("insert into biblioteca values ('" + textBox1.Text + "','" + textBox2.Text + "')", sql);
+            cmdinsert.ExecuteNonQuery();
+            sql.Close();
 
-
-            label3.Visible = false;
-            textBox2.Visible = false;
-
-            button5.Visible = false;
-
-            label4.Visible = false;
-
-            if (opc == 0)
-            {
-                sql.Open();
-                MySqlCommand cmdinsert = new MySqlCommand("insert into biblioteca values ('" + textBox1.Text + "','" + textBox2.Text + "')", sql);
-                cmdinsert.ExecuteNonQuery();
-                sql.Close();
-            }
-            else
-            {
-                sql.Open();
-                MySqlCommand cmdinsert = new MySqlCommand("insert into biblioteca values ('" + comboBox1.Text + "','" + textBox2.Text + "')", sql);
-                cmdinsert.ExecuteNonQuery();
-                sql.Close();
-            }
             button1.Enabled = true;
             button2.Enabled = true;
             button3.Enabled = true;
-            button4.Enabled = true;
-            button5.Enabled = true;
             comboBox1.Enabled = true;
+
+            textBox1.Visible = false;
+            textBox2.Visible = false;
+            label2.Visible = false;
+            label3.Visible = false;
+            label4.Visible = false;
+            buttonAceptar.Visible = false;
 
             cargaCombo();
             cargaTabla();
         }
 
-        private void button6_Click(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e)
         {
             this.Close();
         }
