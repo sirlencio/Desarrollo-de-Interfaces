@@ -23,7 +23,7 @@ namespace Ahorcado
         private void cargar()
         {
             sql.Open();
-            MySqlCommand cmdpuntos = new MySqlCommand("Select fecha, categoria, nrondas, puntuacion from puntuaciones where id_user like " + user.Id + " order by fecha desc", sql);
+            MySqlCommand cmdpuntos = new MySqlCommand("Select fecha, categoria, nrondas, puntuacion from puntuaciones where id_user like '" + user.Nombre + "' order by fecha desc", sql);
             MySqlDataAdapter ad = new MySqlDataAdapter(cmdpuntos);
             DataTable t = new DataTable();
             ad.Fill(t);
@@ -37,7 +37,7 @@ namespace Ahorcado
             {
                 string fecha = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
                 sql.Open();
-                MySqlCommand cmddelete = new MySqlCommand("delete from puntuaciones where id_user like " + user.Id + " and fecha like '" + fecha + "'", sql);
+                MySqlCommand cmddelete = new MySqlCommand("delete from puntuaciones where id_user like " + user.Nombre + " and fecha like '" + fecha + "'", sql);
                 cmddelete.ExecuteNonQuery();
                 sql.Close();
             }

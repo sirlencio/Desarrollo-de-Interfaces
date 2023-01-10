@@ -285,7 +285,7 @@ namespace Ahorcado
             if (!user.Nombre.Equals("Invitado"))
             {
                 sql.Open();
-                MySqlCommand cmdinsert = new MySqlCommand("insert into puntuaciones values (" + user.Id + ",'" + categoria + "'," + ronda + "," + puntuacion + ",'" + DateTime.Now + "')", sql);
+                MySqlCommand cmdinsert = new MySqlCommand("insert into puntuaciones values ('" + user.Nombre + "','" + categoria + "'," + ronda + "," + puntuacion + ",'" + DateTime.Now + "')", sql);
                 cmdinsert.ExecuteNonQuery();
                 sql.Close();
             }

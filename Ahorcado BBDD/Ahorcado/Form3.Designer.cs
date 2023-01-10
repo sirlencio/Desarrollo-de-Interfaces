@@ -763,6 +763,7 @@ namespace Ahorcado
             this.Controls.Add(this.vida1);
             this.Controls.Add(this.vivo);
             this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form3";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ahorcado";

@@ -36,7 +36,7 @@ namespace Ahorcado
             else
             {
                 sql.Open();
-                MySqlCommand cmdpuntos = new MySqlCommand("Select fecha, categoria, nrondas, puntuacion from puntuaciones where id_user like " + user.Id + " order by fecha desc limit 3", sql);
+                MySqlCommand cmdpuntos = new MySqlCommand("Select fecha, categoria, nrondas, puntuacion from puntuaciones where id_user like '" + user.Nombre + "' order by fecha desc limit 3", sql);
                 MySqlDataAdapter ad = new MySqlDataAdapter(cmdpuntos);
                 DataTable t = new DataTable();
                 ad.Fill(t);
@@ -75,11 +75,10 @@ namespace Ahorcado
                 if (!user.Nombre.Equals("Invitado"))
                 {
                     sql.Open();
-                    MySqlCommand cmd = new MySqlCommand("Select id, super from usuarios where nombre like '" + user.Nombre + "' and pwd like '" + user.Pwd + "'", sql);
+                    MySqlCommand cmd = new MySqlCommand("Select super from usuarios where nombre like '" + user.Nombre + "' and pwd like '" + user.Pwd + "'", sql);
                     MySqlDataReader reader = cmd.ExecuteReader();
                     reader.Read();
-                    user.Id = reader.GetInt32(0);
-                    user.Super = reader.GetBoolean(1);
+                    user.Super = reader.GetBoolean(0);
                     sql.Close();
                 }
                 Form3 juego = new Form3(user, comboBox1.Text);

@@ -43,3 +43,4 @@ C:\Users\Carlos\Desktop\Desarrollo-de-Interfaces\Ahorcado BBDD\Ahorcado\obj\Debu
 C:\Users\Carlos\Desktop\Desarrollo-de-Interfaces\Ahorcado BBDD\Ahorcado\obj\Debug\netcoreapp3.1\Ahorcado.Form4.resources
 C:\Users\Carlos\Desktop\Desarrollo-de-Interfaces\Ahorcado BBDD\Ahorcado\obj\Debug\netcoreapp3.1\Ahorcado.Form5.resources
 C:\Users\Carlos\Desktop\Desarrollo-de-Interfaces\Ahorcado BBDD\Ahorcado\obj\Debug\netcoreapp3.1\Ahorcado.Form6.resources
+C:\Users\Carlos\Desktop\Desarrollo-de-Interfaces\Ahorcado BBDD\Ahorcado\obj\Debug\netcoreapp3.1\Ahorcado.Form7.resources

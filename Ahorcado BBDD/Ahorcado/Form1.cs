@@ -18,7 +18,7 @@ namespace Ahorcado
         private Boolean comprobar()
         {
             sql.Open();
-            MySqlCommand comando = new MySqlCommand("Select id, super from usuarios where nombre like '" + user.Nombre + "' and pwd like '" + user.Pwd + "'", sql);
+            MySqlCommand comando = new MySqlCommand("Select super from usuarios where nombre like '" + user.Nombre + "' and pwd like '" + user.Pwd + "'", sql);
             MySqlDataReader reader = comando.ExecuteReader();
             reader.Read();
             if (!reader.HasRows)
@@ -29,8 +29,7 @@ namespace Ahorcado
             else
             {
                 label4.Visible = false;
-                user.Id = reader.GetInt32(0);
-                user.Super = reader.GetBoolean(1);
+                user.Super = reader.GetBoolean(0);
                 sql.Close();
                 return true;
             }
@@ -74,7 +73,7 @@ namespace Ahorcado
                 {
                     sql.Close();
                     sql.Open();
-                    MySqlCommand cmdinsert = new MySqlCommand("insert into usuarios values ("+ 0 + ",'" + user.Nombre + "','" + user.Pwd + "'," + "false" + ")", sql);
+                    MySqlCommand cmdinsert = new MySqlCommand("insert into usuarios values ('" + user.Nombre + "','" + user.Pwd + "'," + "false" + ")", sql);
                     cmdinsert.ExecuteNonQuery();
                     sql.Close();
                     Form2 menu = new Form2(user);
