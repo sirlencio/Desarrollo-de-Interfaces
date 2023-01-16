@@ -87,7 +87,7 @@ namespace Ahorcado
             this.button1.Font = new System.Drawing.Font("Comic Sans MS", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button1.Location = new System.Drawing.Point(648, 76);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(103, 74);
+            this.button1.Size = new System.Drawing.Size(122, 56);
             this.button1.TabIndex = 2;
             this.button1.Text = "Borrar";
             this.button1.UseVisualStyleBackColor = true;
@@ -96,10 +96,10 @@ namespace Ahorcado
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Comic Sans MS", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button2.Location = new System.Drawing.Point(648, 317);
+            this.button2.Location = new System.Drawing.Point(648, 335);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(103, 74);
-            this.button2.TabIndex = 3;
+            this.button2.Size = new System.Drawing.Size(122, 56);
+            this.button2.TabIndex = 5;
             this.button2.Text = "Salir";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);

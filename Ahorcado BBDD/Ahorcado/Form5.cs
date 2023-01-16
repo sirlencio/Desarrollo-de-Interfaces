@@ -13,6 +13,7 @@ namespace Ahorcado
     {
         MySqlConnection sql = new MySqlConnection("server=localhost;user id=root;database=ahorcado;password=admin");
         usuario user = new usuario();
+        string filename;
         public Form5(usuario user)
         {
             InitializeComponent();
@@ -33,7 +34,7 @@ namespace Ahorcado
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if(dataGridView1.SelectedRows.Count > 0)
+            if (dataGridView1.SelectedRows.Count > 0)
             {
                 string fecha = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
                 sql.Open();

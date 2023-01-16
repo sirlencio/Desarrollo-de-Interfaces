@@ -28,6 +28,15 @@ namespace Ahorcado
             label1.Text = "¡Bienvenido " + user.Nombre + "!";
             comboBox1.Items.Clear();
 
+            if (user.Super)
+            {
+                button5.Enabled = true;
+            }
+            else
+            {
+                button5.Enabled = false;
+            }
+
             if (user.Nombre.Equals("Invitado")) // Si es un invitado no queremos que pueda cambiar su contraseña ni ver puntuacion
             {
                 button2.Enabled = false;
@@ -53,15 +62,6 @@ namespace Ahorcado
                 comboBox1.Items.Add(reader.GetString(0));
             }
             sql.Close();
-
-            if(user.Super)
-            {
-                button5.Enabled = true;
-            }
-            else
-            {
-                button5.Enabled = false;
-            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -76,7 +76,9 @@ namespace Ahorcado
                 if (!user.Nombre.Equals("Invitado"))
                 {
                     sql.Open();
-                    MySqlCommand cmd = new MySqlCommand("Select super from usuarios where nombre like '" + user.Nombre + "' and pwd like '" + user.Pwd + "'", sql);
+                    MySqlCommand cmd = new MySqlCommand("Select super from usuarios where nombre like @nombre and pwd like @pwd", sql);
+                    cmd.Parameters.AddWithValue("@nombre", user.Nombre);
+                    cmd.Parameters.AddWithValue("@pwd", user.Pwd);
                     MySqlDataReader reader = cmd.ExecuteReader();
                     reader.Read();
                     user.Super = reader.GetBoolean(0);
@@ -112,8 +114,17 @@ namespace Ahorcado
 
         private void button5_Click(object sender, EventArgs e)
         {
-            Form6 admin = new Form6(user);
-            admin.ShowDialog();
+            if (radioButton1.Checked)
+            {
+                Form6 admin = new Form6();
+                admin.ShowDialog();
+            }
+            else
+            {
+                Form7 admin = new Form7();
+                admin.ShowDialog();
+                carga();
+            }
         }
     }
 }

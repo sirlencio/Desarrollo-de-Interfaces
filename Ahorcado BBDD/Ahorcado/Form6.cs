@@ -12,19 +12,15 @@ namespace Ahorcado
     public partial class Form6 : Form
     {
         MySqlConnection sql = new MySqlConnection("server=localhost;user id=root;database=ahorcado;password=admin");
-        usuario user;
-        int opc;
-        public Form6(usuario user)
+        public Form6()
         {
             InitializeComponent();
-            this.user = user;
             cargaCombo();
         }
 
         private void cargaCombo()
         {
             comboBox1.Items.Clear();
-            comboBox1.Items.Add(""); // Item para añadir categoria
             sql.Open();
             MySqlCommand comando = new MySqlCommand("Select distinct categoria from biblioteca", sql);
             MySqlDataReader reader = comando.ExecuteReader();
@@ -50,114 +46,128 @@ namespace Ahorcado
             cargaTabla();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonInsCat_Click(object sender, EventArgs e)
         {
-            textBox1.Visible = true;
-            label2.Visible = true;
-
-            label3.Visible = true;
-            textBox2.Visible = true;
-
-            buttonAceptar.Visible = true;
-
-            label4.Visible = true;
-
-            if (comboBox1.Text == "") //Si inserta y no hay categoria seleccionada es para una categoria nueva
+            if(textBox1.Text != "" && textBox2.Text != "")
             {
-                textBox1.Text = "";
+                sql.Open();
+                MySqlCommand cmdinsert = new MySqlCommand("insert into biblioteca values ('" + textBox1.Text + "','" + textBox2.Text + "')", sql);
+                cmdinsert.ExecuteNonQuery();
+                sql.Close();
+                label4.Visible = false;
+                label5.Visible = false;
+            }
+            else if(textBox1.Text == "" && textBox2.Text != "")
+            {
+                label4.Text = "Debe introducir una categoria";
+                label4.Visible = true;
+            }
+            else if(textBox2.Text == "" && textBox1.Text != "")
+            {
+                label5.Text = "Debe introducir una palabra";
+                label5.Visible = true;
             }
             else
             {
-                textBox1.Text = comboBox1.Text;
+                label4.Text = "Debe introducir una categoria";
+                label5.Text = "Debe introducir una palabra";
+                label4.Visible = true;
+                label5.Visible = true;
             }
-
-            button1.Enabled = false;
-            button2.Enabled = false;
-            button3.Enabled = false;
-
-            comboBox1.Enabled = false;
+            cargaCombo();
+            textBox1.Text = "";
+            textBox2.Text = "";
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void buttonEliCat_Click(object sender, EventArgs e)
         {
-            textBox1.Text = comboBox1.Text;
-            if (dataGridView1.SelectedRows.Count > 0)
+            if(comboBox1.Text == "")
             {
-                textBox2.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+                label4.Text = "Debe seleccionar una categoria";
+                label4.Visible = true;
             }
-
-            label3.Visible = true;
-            textBox2.Visible = true;
-
-            buttonAceptar.Visible = true;
-
-            label4.Visible = false;
-
-            button1.Enabled = false;
-            button2.Enabled = false;
-            button3.Enabled = false;
-            comboBox1.Enabled = false;
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            DialogResult dr = MessageBox.Show("Esta seguro", "Atencion", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
-            if (dr == DialogResult.Yes)
+            else
             {
-                if (dataGridView1.SelectedRows.Count == 1) //Borrar una palabra
-                {
-                    string palabra = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
-                    sql.Open();
-                    MySqlCommand cmddelete = new MySqlCommand("delete from biblioteca where categoria like '" + comboBox1.Text + "' and palabra like '" + palabra + "'", sql);
-                    cmddelete.ExecuteNonQuery();
-                    sql.Close();
-                }
-                else if (dataGridView1.SelectedRows.Count > 1) // Para multiselect
-                {
-                    for (int i = 0; i < dataGridView1.SelectedRows.Count; i++)
-                    {
-                        string palabra = dataGridView1.SelectedRows[i].Cells[0].Value.ToString();
-                        sql.Open();
-                        MySqlCommand cmddelete = new MySqlCommand("delete from biblioteca where categoria like '" + comboBox1.Text + "' and palabra like '" + palabra + "'", sql);
-                        cmddelete.ExecuteNonQuery();
-                        sql.Close();
-                    }
-                }
-                else if (dataGridView1.SelectedRows.Count == 0) //Borra categoria si no hay palabras seleccionadas
+                DialogResult dg = MessageBox.Show("Esta seguro que desea borrar el usuario y sus puntuaciones??", "Atencion!!", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
+                if (dg == DialogResult.Yes)
                 {
                     sql.Open();
-                    MySqlCommand cmddelete = new MySqlCommand("delete from biblioteca where categoria like '" + comboBox1.Text + "'", sql);
-                    cmddelete.ExecuteNonQuery();
+                    MySqlCommand cmdinsert = new MySqlCommand("delete from biblioteca where categoria like '" + comboBox1.Text + "'", sql);
+                    cmdinsert.ExecuteNonQuery();
                     sql.Close();
+                    cargaCombo();
+                    cargaTabla();
+                    textBox1.Text = "";
+                    textBox2.Text = "";
+                    comboBox1.Text = "";
                 }
-                cargaCombo();
-                cargaTabla();
             }
         }
-        private void buttonAceptar_Click(object sender, EventArgs e)
+
+        private void buttonInsPal_Click(object sender, EventArgs e)
         {
-            sql.Open();
-            MySqlCommand cmdinsert = new MySqlCommand("insert into biblioteca values ('" + textBox1.Text + "','" + textBox2.Text + "')", sql);
-            cmdinsert.ExecuteNonQuery();
-            sql.Close();
-
-            button1.Enabled = true;
-            button2.Enabled = true;
-            button3.Enabled = true;
-            comboBox1.Enabled = true;
-
-            textBox1.Visible = false;
-            textBox2.Visible = false;
-            label2.Visible = false;
-            label3.Visible = false;
-            label4.Visible = false;
-            buttonAceptar.Visible = false;
-
+            if (comboBox1.Text != "" && textBox2.Text != "")
+            {
+                sql.Open();
+                MySqlCommand cmdinsert = new MySqlCommand("insert into biblioteca values ('" + comboBox1.Text + "','" + textBox2.Text + "')", sql);
+                cmdinsert.ExecuteNonQuery();
+                sql.Close();
+                label4.Visible = false;
+                label5.Visible = false;
+                textBox1.Text = "";
+                textBox2.Text = "";
+            }
+            else if (comboBox1.Text == "" && textBox2.Text != "")
+            {
+                label4.Text = "Debe seleccionar una categoria";
+                label4.Visible = true;
+            }
+            else if (textBox2.Text == "" && comboBox1.Text != "")
+            {
+                label5.Text = "Debe introducir una palabra";
+                label5.Visible = true;
+            }
+            else
+            {
+                label4.Text = "Debe seleccionar una categoria";
+                label5.Text = "Debe introducir una palabra";
+                label4.Visible = true;
+                label5.Visible = true;
+            }
             cargaCombo();
             cargaTabla();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void buttonEliPal_Click(object sender, EventArgs e)
+        {
+            if(dataGridView1.SelectedRows.Count > 0)
+            {
+                for(int i = 0; i< dataGridView1.SelectedRows.Count; i++)
+                {
+                    DialogResult dg = MessageBox.Show("Esta seguro que desea borrar la categoria??", "Atencion!!", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
+                    if (dg == DialogResult.Yes)
+                    {
+                        sql.Open();
+                        MySqlCommand cmdinsert = new MySqlCommand("delete from biblioteca where categoria like '" + comboBox1.Text + "' and palabra like '" + dataGridView1.SelectedRows[i].Cells[0].Value.ToString() + "'", sql);
+                        cmdinsert.ExecuteNonQuery();
+                        sql.Close();
+                        label4.Visible = false;
+                        label5.Visible = false;
+                    }
+                }
+            }
+            else
+            {
+                label5.Text = "Debe seleccionar una palabra";
+                label5.Visible = true;
+            }
+            cargaCombo();
+            cargaTabla();
+            textBox1.Text = "";
+            textBox2.Text = "";
+        }
+
+        private void button5_Click(object sender, EventArgs e)
         {
             this.Close();
         }
