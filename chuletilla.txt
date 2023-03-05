@@ -1,0 +1,30 @@
+//Conexion base de datos
+
+MySqlConnection conexion = new MySqlConnection("server=localhost; user id = root; database=poblaciones");
+
+//Carga de combobox
+
+conexion.Open();
+MySqlCommand comando = new MySqlCommand("SELECT Localidad FROM poblaciones where localidad is not null", conexion);
+MySqlDataReader reader = comando.ExecuteReader();
+while (reader.Read())
+{
+	String nombre = reader.GetString(0);
+      comboBox3.Items.Add(nombre);
+}
+reader.Close();
+conexion.Close();
+
+
+//Carga de un parametro
+
+ReportParameter p = new ReportParameter("nombreparametro", parametro);
+reportViewer1.LocalReport.SetParameters(p);
+
+
+//Carga de varios parametros
+
+ReportParameter[] parametros = new ReportParameter[2];
+parametros[0] = new ReportParameter("nombreparametro1", parametro1);
+parametros[1] = new ReportParameter("nombreparametro2", parametro2);
+reportViewer1.LocalReport.SetParameters(parametros);
