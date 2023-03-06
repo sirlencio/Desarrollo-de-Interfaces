@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="worldDataSetPaisCiudad" targetNamespace="http://tempuri.org/worldDataSetPaisCiudad.xsd" xmlns:mstns="http://tempuri.org/worldDataSetPaisCiudad.xsd" xmlns="http://tempuri.org/worldDataSetPaisCiudad.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="worldConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="worldConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.ExamenInforme.Properties.Settings.GlobalReference.Default.worldConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="cityTableAdapter" GeneratorDataComponentClassName="cityTableAdapter" Name="city" UserDataComponentName="cityTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="worldConnectionString (Settings)" DbObjectName="world.city" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `Name`, `Population` FROM `city`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Name" DataSetColumn="Name" />
+              <Mapping SourceColumn="Population" DataSetColumn="Population" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="countryTableAdapter" GeneratorDataComponentClassName="countryTableAdapter" Name="country" UserDataComponentName="countryTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="worldConnectionString (Settings)" DbObjectName="world.country" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `Name` FROM `country`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Name" DataSetColumn="Name" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="worldDataSetPaisCiudad" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="worldDataSetPaisCiudad" msprop:Generator_UserDSName="worldDataSetPaisCiudad">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="city" msprop:Generator_TableClassName="cityDataTable" msprop:Generator_TableVarName="tablecity" msprop:Generator_TablePropName="city" msprop:Generator_RowDeletingName="cityRowDeleting" msprop:Generator_RowChangingName="cityRowChanging" msprop:Generator_RowEvHandlerName="cityRowChangeEventHandler" msprop:Generator_RowDeletedName="cityRowDeleted" msprop:Generator_UserTableName="city" msprop:Generator_RowChangedName="cityRowChanged" msprop:Generator_RowEvArgName="cityRowChangeEvent" msprop:Generator_RowClassName="cityRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="35" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Population" msprop:Generator_ColumnVarNameInTable="columnPopulation" msprop:Generator_ColumnPropNameInRow="Population" msprop:Generator_ColumnPropNameInTable="PopulationColumn" msprop:Generator_UserColumnName="Population" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="country" msprop:Generator_TableClassName="countryDataTable" msprop:Generator_TableVarName="tablecountry" msprop:Generator_TablePropName="country" msprop:Generator_RowDeletingName="countryRowDeleting" msprop:Generator_RowChangingName="countryRowChanging" msprop:Generator_RowEvHandlerName="countryRowChangeEventHandler" msprop:Generator_RowDeletedName="countryRowDeleted" msprop:Generator_UserTableName="country" msprop:Generator_RowChangedName="countryRowChanged" msprop:Generator_RowEvArgName="countryRowChangeEvent" msprop:Generator_RowClassName="countryRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="52" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
